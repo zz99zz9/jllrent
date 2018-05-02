@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0038)http://www.0573fang.com/map/renthouse/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>地图找房 - 嘉论房产网</title>
+<script async="" src="http://fex.bdstatic.com/hunter/alog/dp.csp.min.js?v=140804"></script><script async="" src="http://fex.bdstatic.com/hunter/alog/feature.min.js?v=150727"></script><script async="" src="http://fex.bdstatic.com/hunter/alog/element.min.js?v=160118"></script><script async="" src="http://fex.bdstatic.com/hunter/alog/monkey.min.js"></script><script async="" src="http://fex.bdstatic.com/hunter/alog/speed.min.js?v=160115"></script><script async="" src="http://fex.bdstatic.com/hunter/alog/dp.min.js?v=-17249-17249"></script><script async="" src="http://fex.bdstatic.com/hunter/alog/alog.min.js?v=-17249-17249"></script><script type="text/javascript">
+var coord        = '120.761841,30.753022',
+    siteurl    = 'http://www.0573fang.com/',
+    tplurl        = '/statics/images/';
+</script>
+<script type="text/javascript" src="http://www.0573fang.com/statics/js/jquery142.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=E3d6702fa51f6cb6ef3023b16eff4496"></script><script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=E3d6702fa51f6cb6ef3023b16eff4496&amp;services=&amp;t=20170321153029"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.0573fang.com/statics/images/map/all.css">
+<link type="text/css" rel="stylesheet" href="http://www.0573fang.com/statics/images/map/map_search.css?100927_1">
+<link rel="stylesheet" type="text/css" href="http://www.0573fang.com/statics/images/map/header-m.css">
+<style>
+.map_tip_loading{position: absolute;padding:7px 0 7px 0;width:185px;height:30px;text-align:center;background:#000;ffilter:Alpha(Opacity=70);opacity:.7;color:#fff;line-height:28px;margin:auto;left:0;top:0;z-index:99999;}
+.loading_pic{background:url("http://pages.anjukestatic.com/img/ajkmap/2/ajax-loader.gif") no-repeat;width:16px;height:16px;vertical-align:middle;display:inline-block;margin-right:10px;}
+#area10 .markbg{height:251px;}
+#area10 .mark{height:250px;}
+#map_Tips{height:80%;}
+#area2_m1{width:100%;}
+</style>
+<style type="text/css">.BMap_mask{background:transparent url(http://api0.map.bdimg.com/images/blank.gif);}.BMap_noscreen{display:none;}.BMap_button{cursor:pointer;}.BMap_zoomer{background-image:url(http://api0.map.bdimg.com/images/mapctrls1d3.gif);background-repeat:no-repeat;overflow:hidden;font-size:1px;position:absolute;width:7px;height:7px;}.BMap_stdMpCtrl div{position:absolute;}.BMap_stdMpPan{width:44px;height:44px;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat;}.BMap_ie6 .BMap_stdMpPan{background:none;}.BMap_ie6 .BMap_smcbg{left:0;width:44px;height:464px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://api0.map.bdimg.com/images/mapctrls2d0.png");}.BMap_ie6 .BMap_stdMpPanBg{z-index:-1;}.BMap_stdMpPan .BMap_button{height:15px;width:15px;}.BMap_panN,.BMap_panW,.BMap_panE,.BMap_panS{overflow:hidden;}.BMap_panN{left:14px;top:0;}.BMap_panW{left:1px;top:12px;}.BMap_panE{left:27px;top:12px;}.BMap_panS{left:14px;top:25px;}.BMap_stdMpZoom{top:45px;overflow:hidden;}.BMap_stdMpZoom .BMap_button{width:22px;height:21px;left:12px;overflow:hidden;background-image:url(http://api0.map.bdimg.com/images/mapctrls2d0.png);background-repeat:no-repeat;z-index:10;}.BMap_ie6 .BMap_stdMpZoom .BMap_button{background:none;}.BMap_stdMpZoomIn{background-position:0 -221px;}.BMap_stdMpZoomOut{background-position:0 -265px;}.BMap_ie6 .BMap_stdMpZoomIn div{left:0;top:-221px;}.BMap_ie6 .BMap_stdMpZoomOut div{left:0;top:-265px;}.BMap_stdMpType4 .BMap_stdMpZoom .BMap_button{left:0;overflow:hidden;background:-webkit-gradient(linear,50% 0,50% 100%,from(rgba(255,255,255,0.85)),to(rgba(217,217,217,0.85)));z-index:10;-webkit-border-radius:22px;width:34px;height:34px;border:1px solid rgba(255,255,255,0.5);-webkit-box-shadow:0 2px 3.6px #CCC;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;-webkit-box-sizing:border-box;}.BMap_stdMpType4 .BMap_smcbg{position:static;background:url(http://api0.map.bdimg.com/images/mapctrls2d0_mb.png) 0 0 no-repeat;-webkit-background-size:24px 32px;}.BMap_stdMpType4 .BMap_stdMpZoomIn{background-position:0 0;}.BMap_stdMpType4 .BMap_stdMpZoomIn .BMap_smcbg{width:24px;height:24px;background-position:0 0;}.BMap_stdMpType4 .BMap_stdMpZoomOut{background-position:0 0;}.BMap_stdMpType4 .BMap_stdMpZoomOut .BMap_smcbg{width:24px;height:6px;background-position:0 -25px;}.BMap_stdMpSlider{width:37px;top:18px;}.BMap_stdMpSliderBgTop{left:18px;width:10px;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat -23px -226px;}.BMap_stdMpSliderBgBot{left:19px;height:8px;width:10px;top:124px;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat -33px bottom;}.BMap_ie6 .BMap_stdMpSliderBgTop,.BMap_ie6 .BMap_stdMpSliderBgBot{background:none;}.BMap_ie6 .BMap_stdMpSliderBgTop div{left:-23px;top:-226px;}.BMap_ie6 .BMap_stdMpSliderBgBot div{left:-33px;bottom:0;}.BMap_stdMpSliderMask{height:100%;width:24px;left:10px;cursor:pointer;}.BMap_stdMpSliderBar{height:11px;width:19px;left:13px;top:80px;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat 0 -309px;}.BMap_stdMpSliderBar.h{background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat 0 -320px;}.BMap_ie6 .BMap_stdMpSliderBar,.BMap_ie6 .BMap_stdMpSliderBar.h{background:none;}.BMap_ie6 .BMap_stdMpSliderBar div{top:-309px;}.BMap_ie6 .BMap_stdMpSliderBar.h div{top:-320px;}.BMap_zlSt,.BMap_zlCity,.BMap_zlProv,.BMap_zlCountry{position:absolute;left:34px;height:21px;width:28px;background-image:url(http://api0.map.bdimg.com/images/mapctrls2d0.png);background-repeat:no-repeat;font-size:0;cursor:pointer;}.BMap_ie6 .BMap_zlSt,.BMap_ie6 .BMap_zlCity,.BMap_ie6 .BMap_zlProv,.BMap_ie6 .BMap_zlCountry{background:none;overflow:hidden;}.BMap_zlHolder{display:none;position:absolute;top:0;}.BMap_zlHolder.hvr{display:block;}.BMap_zlSt{background-position:0 -380px;top:21px;}.BMap_zlCity{background-position:0 -401px;top:52px;}.BMap_zlProv{background-position:0 -422px;top:76px;}.BMap_zlCountry{background-position:0 -443px;top:100px;}.BMap_ie6 .BMap_zlSt div{top:-380px;}.BMap_ie6 .BMap_zlCity div{top:-401px;}.BMap_ie6 .BMap_zlProv div{top:-422px;}.BMap_ie6 .BMap_zlCountry div{top:-443px;}.BMap_stdMpType1 .BMap_stdMpSlider,.BMap_stdMpType2 .BMap_stdMpSlider,.BMap_stdMpType3 .BMap_stdMpSlider,.BMap_stdMpType4 .BMap_stdMpSlider,.BMap_stdMpType2 .BMap_stdMpZoom,.BMap_stdMpType3 .BMap_stdMpPan,.BMap_stdMpType4 .BMap_stdMpPan{display:none;}.BMap_stdMpType3 .BMap_stdMpZoom{top:0;}.BMap_stdMpType4 .BMap_stdMpZoom{top:0;}.BMap_cpyCtrl a{font-size:11px;color:#7979CC;}.BMap_scaleCtrl{height:23px;overflow:hidden;}.BMap_scaleCtrl div.BMap_scaleTxt{font-size:11px;font-family:Arial,sans-serif;}.BMap_scaleCtrl div{position:absolute;overflow:hidden;}.BMap_scaleHBar img,.BMap_scaleLBar img,.BMap_scaleRBar img{position:absolute;width:37px;height:442px;left:0;}.BMap_scaleHBar{width:100%;height:5px;font-size:0;bottom:0;}.BMap_scaleHBar img{top:-437px;width:100%;}.BMap_scaleLBar,.BMap_scaleRBar{width:3px;height:9px;bottom:0;font-size:0;z-index:1;}.BMap_scaleLBar img{top:-427px;left:0;}.BMap_scaleRBar img{top:-427px;left:-5px;}.BMap_scaleLBar{left:0;}.BMap_scaleRBar{right:0;}.BMap_scaleTxt{text-align:center;width:100%;cursor:default;line-height:18px;}.BMap_omCtrl{background-color:#fff;overflow:hidden;}.BMap_omOutFrame{position:absolute;width:100%;height:100%;left:0;top:0;}.BMap_omInnFrame{position:absolute;border:1px solid #999;background-color:#ccc;overflow:hidden;}.BMap_omMapContainer{position:absolute;overflow:hidden;width:100%;height:100%;left:0;top:0;}.BMap_omViewMv{border-width:1px;border-style:solid;border-left-color:#84b0df;border-top-color:#adcff4;border-right-color:#274b8b;border-bottom-color:#274b8b;position:absolute;z-index:600;}.BMap_omViewInnFrame{border:1px solid #3e6bb8;}.BMap_omViewMask{width:1000px;height:1000px;position:absolute;left:0;top:0;background-color:#68c;opacity:.2;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);}.BMap_omBtn{height:13px;width:13px;position:absolute;cursor:pointer;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls1d3.gif) no-repeat;z-index:1210;}.anchorBR .BMap_omOutFrame{border-top:1px solid #999;border-left:1px solid #999;}.quad4 .BMap_omBtn{background-position:-26px -27px;}.quad4 .BMap_omBtn.hover{background-position:0 -27px;}.quad4 .BMap_omBtn.BMap_omBtnClosed{background-position:-39px -27px;}.quad4 .BMap_omBtn.BMap_omBtnClosed.hover{background-position:-13px -27px;}.anchorTR .BMap_omOutFrame{border-bottom:1px solid #999;border-left:1px solid #999;}.quad1 .BMap_omBtn{background-position:-39px -41px;}.quad1 .BMap_omBtn.hover{background-position:-13px -41px;}.quad1 .BMap_omBtn.BMap_omBtnClosed{background-position:-26px -41px;}.quad1 .BMap_omBtn.BMap_omBtnClosed.hover{background-position:0 -41px;}.anchorBL .BMap_omOutFrame{border-top:1px solid #999;border-right:1px solid #999;}.quad3 .BMap_omBtn{background-position:-27px -40px;}.quad3 .BMap_omBtn.hover{background-position:-1px -40px;}.quad3 .BMap_omBtn.BMap_omBtnClosed{background-position:-40px -40px;}.quad3 .BMap_omBtn.BMap_omBtnClosed.hover{background-position:-14px -40px;}.anchorTL .BMap_omOutFrame{border-bottom:1px solid #999;border-right:1px solid #999;}.quad2 .BMap_omBtn{background-position:-40px -28px;}.quad2 .BMap_omBtn.hover{background-position:-14px -28px;}.quad2 .BMap_omBtn.BMap_omBtnClosed{background-position:-27px -28px;}.quad2 .BMap_omBtn.BMap_omBtnClosed.hover{background-position:-1px -28px;}.anchorR .BMap_omOutFrame{border-bottom:1px solid #999;border-left:1px solid #999;border-top:1px solid #999;}.anchorL .BMap_omOutFrame{border-bottom:1px solid #999;border-right:1px solid #999;border-top:1px solid #999;}.anchorB .BMap_omOutFrame{border-top:1px solid #999;border-left:1px solid #999;border-right:1px solid #999;}.anchorT .BMap_omOutFrame{border-bottom:1px solid #999;border-right:1px solid #999;border-left:1px solid #999;}.anchorNon .BMap_omOutFrame,.withOffset .BMap_omOutFrame{border:1px solid #999;}.BMap_zoomMask0,.BMap_zoomMask1{position:absolute;left:0;top:0;width:100%;height:100%;background:transparent url(http://api0.map.bdimg.com/images/blank.gif);z-index:1000;}.BMap_contextMenu{position:absolute;border-top:1px solid #adbfe4;border-left:1px solid #adbfe4;border-right:1px solid #8ba4d8;border-bottom:1px solid #8ba4d8;padding:0;margin:0;width:auto;visibility:hidden;background:#fff;z-index:10000000;}.BMap_cmShadow{position:absolute;background:#000;opacity:.3;filter:alpha(opacity=30);visibility:hidden;z-index:9000000;}div.BMap_cmDivider{border-bottom:1px solid #adbfe4;font-size:0;padding:1px;margin:0 6px;}div.BMap_cmFstItem{margin-top:2px;}div.BMap_cmLstItem{margin-bottom:2px;}.BMap_shadow img{border:0 none;margin:0;padding:0;height:370px;width:1144px;}.BMap_pop .BMap_top{border-top:1px solid #ababab;background-color:#fff;}.BMap_pop .BMap_center{border-left:1px solid #ababab;border-right:1px solid #ababab;background-color:#fff;}.BMap_pop .BMap_bottom{border-bottom:1px solid #ababab;background-color:#fff;}.BMap_shadow,.BMap_shadow img,.BMap_shadow div{-moz-user-select:none;-webkit-user-select:none;}.BMap_checkbox{background:url(http://api0.map.bdimg.com/images/mapctrls1d3.gif);vertical-align:middle;display:inline-block;width:11px;height:11px;margin-right:4px;background-position:-14px 90px;}.BMap_checkbox.checked{background-position:-2px 90px;}.BMap_pop .BMap_top img,.BMap_pop .BMap_center img,.BMap_pop .BMap_bottom img{display:none;}@media print{.BMap_noprint{display:none;}.BMap_noscreen{display:block;}.BMap_mask{background:none;}.BMap_pop .BMap_top img,.BMap_pop .BMap_center img,.BMap_pop .BMap_bottom img{display:block;}}.BMap_vectex{cursor:pointer;width:11px;height:11px;position:absolute;background-repeat:no-repeat;background-position:0 0;}.BMap_vectex_nodeT{background-image:url(http://api0.map.bdimg.com/images/nodeT.gif);}.BMap_vectex_node{background-image:url(http://api0.map.bdimg.com/images/node.gif);}.iw{width:100%;-webkit-box-sizing:border-box;border:.3em solid transparent;-webkit-background-clip:padding;}.iw_rt{position:relative;height:46px;width:195px;-webkit-box-sizing:border-box;display:-webkit-box;-webkit-box-align:center;margin:2px 5px 0 2px;background-color:rgba(0,0,0,0.8);-webkit-box-shadow:2px 2px 7px rgba(0,0,0,0.3);-webkit-border-radius:2px;color:#fff;}.iw_rt:after{content:"";position:absolute;left:50%;bottom:-8px;width:0;height:0;border-left:5px solid transparent;border-top:8px solid rgba(0,0,0,0.8);border-right:5px solid transparent;margin:0 0 0 -6px;}.iw_s{text-align:center;vertical-align:middle;height:100%;-webkit-box-sizing:border-box;}.iw_rt .iw_s1{color:#cbcbcb;}.iw_rt b{color:#fff;font-weight:bold;}.iw_rt_gr{margin-left:-4px;}.iw_busline{margin:32px 0 0 -3px;}.iw_busline .iw_cc{text-align:center;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;padding:0 6px;}.iw_r{-webkit-box-ordinal-group:3;}.iw_r,.iw_l{height:100%;font-size:4.5em;text-align:center;color:#747474;border:none;-webkit-box-sizing:border-box;-webkit-border-radius:0;line-height:.7em;border:1px solid rgba(255,255,255,0.2);width:41px;}.iw_r{border-style:none none none solid;}.iw_l{border-style:none solid none none;}.iw_search,.iw_l{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAlCAYAAAAuqZsAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNl SUQ9InhtcC5paWQ6QjA3NjMyREJDNzQ2MTFFMTlBQUM5QzlCRDZGODZCQkYiIHhtcE1NOkRvY3Vt ZW50SUQ9InhtcC5kaWQ6QjA3NjMyRENDNzQ2MTFFMTlBQUM5QzlCRDZGODZCQkYiPiA8eG1wTU06 RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCMDc2MzJEOUM3NDYxMUUxOUFB QzlDOUJENkY4NkJCRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCMDc2MzJEQUM3NDYxMUUx OUFBQzlDOUJENkY4NkJCRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PllB9T8AAAKuSURBVHjaxFjRcdpAEAX+mVEqiFxB5AoQ HZAKElcArsBWBSgVQCoAVwCuwEoFlivwGQpI7jKrzGXn7ep0EsPO7BjLp/O73bdv9xifTqdRpCXW c+sz65n1lNy3mvzZemX9aN34C6bTKdx8HAHMgVlaX0QeaGv9J4EcBJgD9EA/hzAH7N4Cq/oAW1tf KX+vKEXP7PlMSLFvhQX32BWY49GBOIRO7FKy57wBlnoUQHu5yJX+g4mymdvgFWzkAM3JtwGgmiJw a2/pvQoEYBQCLKNI8RfuaeNjT245gAUdqgHdmkqUPiOctLdJVYkithkAVO/K5cC+M30KAZVSxboo /ybnn1eIR5r5qUyI7P4GX6nqJHskbQsxQ7wqu6aSn2qrgHLrXjqAat5ZC0WlRuzVE0J3uhtBCjRt a3qjX92JIMiOIqYtYgumzpo+7RRtu/E0zvknokMF5GgdQv4Ze/5DWL8CFVe2aNuedGsLCi1vS+WL F4WKNkL2Dnh414FnO1b1R5vKuRaxjKUF2YKBqjuCGtF6nyL5+XxOJWCcL2/CpjzdRYRuGpDShQQs ARUj9U/OnRh7Yr9/CW1JXU4fYxXoHIMCu+iB+gBLIt/LgShDYCYktGCDfCBgvyRgVQgZwTy/jIzy EnQNMZV1QCT4bJ+3XFCkS81/WijdkiYAdSak04BWtabWEmIbsNZYgU00YE+gjyErQeo31GpShVMH Yc+/dwsEzh97/D6ojT2ZMlM1XwN8WP9Ma7NAbZvbtBoEjE+jBT2TusCu5SIbI7z/wLWN1rdKi0o6 cqwTuAmYyTm5NQW/82atWvlnBbo7apxD98qDJxl7mkC76JQ2Qm0CI1xKF95Gb4oLXHJDwJlxjy/u LgruGtNFM8lqnNtfK2JqN3CVeW1gzWj9jThd0xd59R8BBgAAiefGO1Bt1gAAAABJRU5ErkJggg==") no-repeat 50% 50%;-webkit-background-size:19px 19px;}.iw_line_s,.iw_r{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNl SUQ9InhtcC5paWQ6QjA3NjMyREZDNzQ2MTFFMTlBQUM5QzlCRDZGODZCQkYiIHhtcE1NOkRvY3Vt ZW50SUQ9InhtcC5kaWQ6QjA3NjMyRTBDNzQ2MTFFMTlBQUM5QzlCRDZGODZCQkYiPiA8eG1wTU06 RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCMDc2MzJEREM3NDYxMUUxOUFB QzlDOUJENkY4NkJCRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCMDc2MzJERUM3NDYxMUUx OUFBQzlDOUJENkY4NkJCRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqheQ+MAAAEtSURBVHja7JftDYIwEIbB8JeEUXACZQPd oGygE+gGxAnQEZzAOgEdwREIDKBXUgjBIqW5Npj0kvcHpG0erveFX1WVZ8l2oBhEhRoLw/BroW8J KgeR3vMVlI5BrSwAHQZAnngmYxtMe4oIL41ZAp6iNqF4/BQTa0oBxmxAcaAHKFJY+wKtAaw0CRUJ oHjGHiY8VpqCKmYCdRkJUKmJ7Ms1gZqkqOs6w/bUGXRCOGePCcXjaItwDsW8PoZ0zhM70IeeyiZi jH/Isf+CF9MAOdCppDj+LJ6yim6j9802B6VqQa818BFjY6AHakHp9Crj15ctCaiFIi7Q/wCKLRHq vjSoVNKWunH4rTBDv5Cv7NKeKfvvU2nINzHAuexzUA7KQTkoB6UxDicKvc+qfQQYABaiUBxugCsr AAAAAElFTkSuQmCC") no-repeat 50% 50%;-webkit-background-size:19px 19px;}.iw_line{height:64px;width:228px;padding:0 11px;line-height:20px;}.iw_bustrans .iw_cc{text-align:center;}.iw_c{color:#FFFFFF;text-decoration:none;overflow:hidden;display:-webkit-box;-webkit-box-align:center;-webkit-box-flex:1;}.iw_cc{-webkit-box-sizing:border-box;width:100%;border:none;}.gray_background{filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity:0.5;opacity: 0.5} .light_gray_background {filter:alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity: 0.7} .panoInfoBox {cursor: pointer; } .panoInfoBox {position: relative; width: 323px; height: 101px; margin-bottom: 4px; cursor: pointer; } .panoInfoBox .panoInfoBoxTitleBg {width: 323px; height: 19px; position: absolute; left: 0; bottom: 0; z-index: 2; background-color: #000; opacity: .7; } .panoInfoBox .panoInfoBoxTitleContent {font-size: 12px; color: #fff; position: absolute; bottom: 2px; left: 5px; z-index: 3; text-decoration: none; } .RouteAddressOuterBkg{position:relative; padding: 32px 4px 4px 3px; background-color:#ffdd99; } .RouteAddressInnerBkg{padding: 3px 5px 8px 8px; background-color:#ffffff; } #RouteAddress_DIV1{margin-top: 5px; } .RouteAddressTip{position:absolute; width:100%; top:0px; text-align:center; height:30px; line-height:30px; color:#994c00; } .route_tip_con {position:absolute;top:145px;} .route_tip_con .route_tip{position:absolute;width:233px;height:29px;color:#803300;text-align:center;line-height:29px;border:#cc967a solid 1px;background:#fff2b2;z-index:100000;} .route_tip_con .route_tip span{position:absolute;top:0;right:0;_right:-1px;width:14px;height:13px;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -121px;cursor:pointer;} .route_tip_con .route_tip_shadow{width:233px;height:29px;  position:absolute;left:1px;top:1px;background:#505050;border:1px solid #505050;opacity:0.2;filter:alpha(opacity=20)} .sel_body_body_page{margin:5px 0} .sel_n{margin-top:5px;overflow:hidden;} .sel_n .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -418px;height:4px;font-size:0px;} .sel_n .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -41px;} .sel_n .sel_body_title{float:left;width:100%;height:31px;} .sel_n .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -79px -387px;} .sel_n .sel_body_name{height: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#FA8722;} .sel_n .sel_body_button{float:left;width:55px;margin-left:-55px;padding-top:8px;} .sel_n .sel_body_button a{} .sel_n .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -415px;height:4px;font-size:0px;} .sel_n .sel_body_body{padding:3px 0 0 0} .sel_n1{margin-top:5px;width:329px;overflow:hidden;} .sel_n1 .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -418px;height:4px;font-size:0px;} .sel_n1 .sel_body_top{height:31px;width:100%;background:url(http://api0.map.bdimg.com/images/sel_body_n_top.gif) repeat-x;} .sel_n1 .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -41px} .sel_n1 .sel_body_title{float:left;width:100%;height:31px;cursor:pointer;} .sel_n1 .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -79px -387px;} .sel_n1 .sel_body_name{margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#FA8722;} .sel_n1 .sel_body_button{float:left;width:20px;height:31px;margin-left:-23px;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -253px -382px;overflow:hidden;zoom:1;cursor:pointer;} .sel_n1 .sel_body_button a{display:none;} .sel_n1 .sel_body_body{display:none} .sel_n1 .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -415px;height:4px;font-size:0px;} .sel_y{margin-top:5px;overflow:hidden;} .sel_y .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -439px;height:4px;zoom:1;font-size:0px;} .sel_y .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 0} .sel_y .sel_body_title{float:left;width:100%;height:31px;cursor:pointer;} .sel_y .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -167px -384px;} .sel_y .sel_body_name{margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#5B7BCB;} .sel_y .sel_body_button{float:left;width:20px;height:31px;margin-left:-20px;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -269px -297px;cursor:pointer;} .sel_y .sel_body_button a{display:none;} .sel_y .sel_body_body{display:none;height:0px} .sel_y .sel_body_body_div{} .sel_y .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -436px;height:4px;font-size:0px;} .sel_y .sel_body_body_page{display:none;height:0px;} .sel_x{margin-top:5px;width:329px;overflow:hidden;} .sel_x .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -418px;height:4px;font-size:0px;} .sel_x .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -41px;} .sel_x .sel_body_title{float:left;width:100%;height:31px;} .sel_x .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -122px -384px;} .sel_x .sel_body_name{margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#FA8722;} .sel_x .sel_body_button{float:left;width:55px;margin-left:-55px;padding-top:8px;} .sel_x .sel_body_button a{} .sel_x .sel_body_body{} .sel_x .sel_body_body_div{padding:5px 5px 0 5px;} .sel_x .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -415px;height:4px;font-size:0px;} .sel_x1{margin-top:5px;width:329px;overflow:hidden;} .sel_x1 .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -418px;height:4px;font-size:0px;} .sel_x1 .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -41px} .sel_x1 .sel_body_title{float:left;width:100%;height:31px;cursor:pointer;} .sel_x1 .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -122px -384px;} .sel_x1 .sel_body_name{margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#FA8722;} .sel_x1 .sel_body_button{float:left;width:55px;height:31px;margin-left:-55px;} .sel_x1 .sel_body_button a{display:none;} .sel_x1 .sel_body_body{display:none;height:0px;} .sel_x1 .sel_body_body_div{padding:5px 5px 0 5px;} .sel_x1 .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -415px;height:4px;font-size:0px;} .sel_body_citylist{height:100px;padding: 0 0 0 5px} .sel_body_resitem{table-layout:fixed;overflow-x:hidden;overflow-y:hidden;} .sel_body_resitem table {margin-right:5px;} .sel_body_resitem tr{cursor:pointer;} .sel_body_resitem th{padding-top:5px;padding-left:5px;text-align:left;vertical-align:top;width:22px;} .sel_body_resitem th div.iconbg{background:url(http://api0.map.bdimg.com/images/markers_new_ie6.png) no-repeat scroll 0 0;height:29px;width:24px;} .sel_body_resitem th div.icon{cursor:pointer} .sel_body_resitem th div#no_0_1, .sel_body_resitem th div#no_1_1{background-position:0 -64px} .sel_body_resitem th div#no_0_2, .sel_body_resitem th div#no_1_2{background-position:-24px -64px} .sel_body_resitem th div#no_0_3, .sel_body_resitem th div#no_1_3{background-position:-48px -64px} .sel_body_resitem th div#no_0_4, .sel_body_resitem th div#no_1_4{background-position:-72px -64px} .sel_body_resitem th div#no_0_5, .sel_body_resitem th div#no_1_5{background-position:-96px -64px} .sel_body_resitem th div#no_0_6, .sel_body_resitem th div#no_1_6{background-position:-120px -64px} .sel_body_resitem th div#no_0_7, .sel_body_resitem th div#no_1_7{background-position:-144px -64px} .sel_body_resitem th div#no_0_8, .sel_body_resitem th div#no_1_8{background-position:-168px -64px} .sel_body_resitem th div#no_0_9, .sel_body_resitem th div#no_1_9{background-position:-192px -64px} .sel_body_resitem th div#no_0_10, .sel_body_resitem th div#no_1_10{background-position:-216px -64px} .sel_body_resitem td{line-height:160%;padding:3px 0 3px 3px;vertical-align:top;} .sel_body_resitem div.ra_td_title{float:left;margin-right:40px;} .sel_body_resitem div.ra_td_button{float:right; width:40px;} .sel_body_resitem div.ra_td_button input{height:18px;font-size:12px;width:40px;} .sel_body_resitem div.clear{clear:both;height:0px;width:100%;} .sel_body_resitem td .selBtn {width:70px;height:29px;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat -21px -81px;text-align:center;line-height:29px;visibility:hidden;color:#b35900;display:inline-block;*display:inline;*zoom:1;} .sel_body_resitem td .list_street_view_poi {display:inline-block;float:none;margin-right:6px;position:static;*vertical-align:-3px;_vertical-align:-5px;*display:inline;*zoom:1;} .selInfoWndBtn {width:70px;height:29px;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat -21px -81px;text-align:center;line-height:29px;margin: 0 auto;cursor:pointer;color:#b35900} .sel_body_body td a{text-decoration: none; cursor: auto; } .sel_body_body td a:hover,.sel_body_body td a:focus{text-decoration:underline; }.panoInfoBox{cursor:pointer}.panoInfoBox{position:relative;width:323px;height:101px;margin-bottom:4px;cursor:pointer}.panoInfoBox .panoInfoBoxTitleBg{width:323px;height:19px;position:absolute;left:0;bottom:0;z-index:2;background-color:#000;opacity:.7}.panoInfoBox .panoInfoBoxTitleContent{font-size:12px;color:#fff;position:absolute;bottom:2px;left:5px;z-index:3;text-decoration:none}.pano_switch_left,.pano_switch_right{position:absolute;width:28px;height:38px;cursor:pointer;background-color:#252525;background-color:rgba(37,37,37,.9)}.pano_switch_left{background:url(http://api0.map.bdimg.com/images/panorama/zuojiantou.png) no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}.pano_switch_right{background:url(http://api0.map.bdimg.com/images/panorama/youjiantou.png) no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}.pano_switch_left:hover{background:url(http://api0.map.bdimg.com/images/panorama/zuojiantou_hover.png) no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}.pano_switch_right:hover{background:url(http://api0.map.bdimg.com/images/panorama/youjiantou_hover.png) no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}.pano_switch_left.pano_switch_disable,.pano_switch_right.pano_switch_disable{background:0 0;border:none}.pano_poi_1,.pano_poi_2,.pano_poi_4{display:inline-block;width:16px;height:16px;vertical-align:middle;background:url(http://webmap0.map.bdimg.com/newmap/static/common/images/pano_whole/guide_icons_4b871b2.png) no-repeat;background-position:0 0}.pano_photo_arrow_l,.pano_photo_arrow_r{position:absolute;top:0;width:20px;height:100%;background:#f3eeee}.pano_photo_arrow_l{left:0}.pano_photo_arrow_r{right:0}.pano_arrow_l,.pano_arrow_r{display:inline-block;width:18px;height:18px;background:url(http://webmap0.map.bdimg.com/newmap/static/common/images/pano_whole/pano-icons_223a291.png) no-repeat}.pano_catlogLi{cursor:pointer;position:relative;line-height:10px;font-size:10px;text-align:center;color:#abb0b2;border:1px solid #53565c;padding:3px 0;margin-top:3px;margin-left:2px;width:90%}.pano_catlogLi:hover{color:#3DAAFC;border:1px solid #3DAAFC}.pano_catlogLiActive{color:#3DAAFC;border:1px solid #3DAAFC}.pano_arrow_l{background-position:0 -36px}.pano_arrow_r{background-position:-54px -36px}.pano_photo_arrow_l:hover .pano_arrow_l{background-position:-18px -36px}.pano_photo_arrow_r:hover .pano_arrow_r{background-position:-72px -36px}.pano_photo_arrow_l.pano_arrow_disable .pano_arrow_l{background-position:-36px -36px}.pano_photo_arrow_r.pano_arrow_disable .pano_arrow_r{background-position:-90px -36px}.pano_photo_item{position:relative;float:left;line-height:0;padding-left:8px}.pano_photo_decs{position:absolute;bottom:1px;left:0;padding:2px 0;text-indent:5px;margin-left:8px;display:inline-block;color:#fff;background:#000;opacity:.5;filter:alpha(opacity=50)9;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.pano_photo_item img{display:inline-block;border:solid 1px #252525}.pano_photo_item:hover img{border-color:#005efc}.pano_photo_item_seleted{position:absolute;top:0;left:-100000px;border:3px solid #097df3}.pano_close{position:absolute;right:10px;top:10px;width:40px;cursor:pointer;height:40px;line-height:40px;border-radius:3px;background-color:rgba(37,37,37,.9);background-image:url(http://api0.map.bdimg.com/images/panorama/close.png);background-repeat:no-repeat;background-position:center center;background-size:90%}.pano_close:hover{background-image:url(http://api0.map.bdimg.com/images/panorama/close_hover.png)}.pano_pc_indoor_exit{position:absolute;right:60px;top:10px;width:89px;cursor:pointer;height:40px;line-height:40px;color:#ebedf0;border-radius:3px;background-color:#252525;background-color:rgba(37,37,37,.9);background-image:url(http://api0.map.bdimg.com/images/panorama/indoor_exit.png);background-repeat:no-repeat;background-position:15px 12px}.pano_pc_indoor_exit:hover{background-image:url(http://api0.map.bdimg.com/images/panorama/indoor_exit_hover.png);color:#2495ff}.pano_m_indoor_exit{font-size:16px;position:absolute;right:30px;top:10px;width:89px;cursor:pointer;height:40px;line-height:40px;color:#ebedf0;border-radius:3px;background-color:#252525;background-color:rgba(37,37,37,.9);background-image:url(http://api0.map.bdimg.com/images/panorama/indoor_exit.png);background-repeat:no-repeat;background-position:15px 12px}.navtrans-table tr{color:#666}.navtrans-table tr:hover{color:#333}.navtrans-navlist-icon{float:left;width:18px;height:16px;background:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/nav-icon_b5c3223.png) no-repeat 0px 0px;_background:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/nav-icon_ie6_134841b.png) no-repeat 0px 0px;margin-top:2px;margin-right:5px}.navtrans-navlist-icon.s-1{background-position:0px 0px}.navtrans-navlist-icon.s-2{background-position:-18px 0px}.navtrans-navlist-icon.s-3{background-position:-36px 0px}.navtrans-navlist-icon.s-4{background-position:-54px 0px}.navtrans-navlist-icon.s-5{background-position:-72px 0px}.navtrans-navlist-icon.s-6{background-position:-90px 0px}.navtrans-navlist-icon.s-7{background-position:0px -16px}.navtrans-navlist-icon.s-8{background-position:-18px -16px}.navtrans-navlist-icon.s-9{background-position:-36px -16px}.navtrans-navlist-icon.s-10{background-position:-54px -16px}.navtrans-navlist-icon.s-11{background-position:-72px -16px}.navtrans-navlist-icon.s-12{background-position:-90px -16px}.navtrans-navlist-icon.s-13{background-position:0px -32px}.navtrans-navlist-icon.s-14{background-position:-18px -32px}.navtrans-navlist-icon.s-18{background-position:-36px -32px}.navtrans-navlist-icon.s-19{background-position:-54px -32px}.navtrans-navlist-icon.s-20{background-position:-72px -32px}.navtrans-navlist-icon.s-21{background-position:-90px -32px}.navtrans-navlist-icon.nav-st,.navtrans-navlist-icon.nav-through{background-position:-16px -70px}.navtrans-navlist-icon.nav-ed{background-position:0px -70px}.navtrans-view{border-top:1px solid #e4e6e7;border-left:1px solid #e4e6e7;border-right:1px solid #e4e6e7}.navtrans-view:hover{cursor:pointer}.navtrans-view .navtrans-arrow{position:absolute;top:8px;right:5px;width:7px;height:4px;background-image:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/nav-icon_b5c3223.png);background-repeat:no-repeat;background-position:-40px -70px;margin-top:3px;margin-right:3px;_background-image:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/nav-icon_ie6_134841b.png)}.navtrans-view.expand:hover .navtrans-arrow{background-position:-61px -70px}.navtrans-view.expand .navtrans-arrow{background-position:-54px -70px}.navtrans-view:hover .navtrans-arrow{background-position:-47px -70px}.navtrans-navlist-content{overflow:hidden}.navtrans-res{border-bottom:1px solid #E4E6E7;border-left:1px solid #E4E6E7;border-right:1px solid #E4E6E7}.navtrans-bus-icon{display:inline-block;float:left;background-image:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/ui3/mo_banner_e1aa2e6.png);background-repeat:no-repeat}.navtrans-bus-icon.bus{width:13px;height:16px;background-position:-1px -192px;position:relative;top:4px}.navtrans-bus-icon.walk{width:16px;height:18px;background-position:-63px -189px;position:relative;top:2px;left:-2px}.navtrans-bus-desc{line-height:24px;margin-left:20px}.navtrans-busstation{color:#36c;font-weight:600}.tranroute-plan-list.expand .trans-title{border-bottom:1px solid #e4e6e7;background-color:#ebf1fb}.trans-plan-content tr td:hover .bus{background-position:-15px -192px}.trans-plan-content tr td:hover .walk{background-position:-82px -189px}.suggest-plan{position:absolute;background-color:#0C88E8;padding:0px 15px;line-height:20px;color:#fff;left:0px;top:0px}.suggest-plan-des{text-align:left;padding:29px 0px 0px 25px;font-size:13px;color:#000}.bmap-clearfix{*+height:1%}.bmap-clearfix:after{content:".";display:block;height:0px;clear:both;visibility:hidden}.BMap_CityListCtrl{font-size:12px}.BMap_CityListCtrl a{text-decoration:none!important}.BMap_CityListCtrl a:hover{text-decoration:underline!important}.BMap_CityListCtrl .citylist_popup_main{border:1px solid #cdcdcd;z-index:2;position:relative;width:100%;height:100%;background:#fafafa;overflow:hidden;box-shadow:1px 1px 1px rgba(0,0,0,.1)}.ui_city_change_top .ui_city_change_inner,.ui_city_change_bottom .ui_city_change_inner{display:inline-block;height:24px;line-height:24px;border:1px solid #c4c7cc;background-color:#fff;padding:0 10px 0 10px;color:#000}.ui_city_change_top .ui_city_change_inner i,.ui_city_change_bottom .ui_city_change_inner i{width:8px;height:6px;display:inline-block;position:relative;top:9px;left:5px;-webkit-transition:all ease-in-out .15s;transition:all ease-in-out .15s;display:none9}.ui_city_change_click .ui_city_change_inner i,.ui_city_change_click_close .ui_city_change_inner i{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}.ui_city_change_top .ui_city_change_inner:hover em{border-top-color:#0C88E8}.ui_city_change_top .ui_city_change_inner em{width:0;height:0;border-color:rgba(255,255,255,0);border-top-color:#D0D4DA;border-style:solid;border-width:4px}.ui_city_change_top .ui_city_change_inner:hover,.ui_city_change_bottom .ui_city_change_inner:hover{text-decoration:none!important;color:#3d6dcc}.ui_city_change_bottom .ui_city_change_inner:hover em{border-bottom-color:#0C88E8}.ui_city_change_bottom .ui_city_change_inner em{width:0;height:0;border-color:rgba(255,255,255,0);border-bottom-color:#D0D4DA;border-style:solid;border-width:4px;position:relative;top:-18px}.citylist_popup_main .citylist_ctr_title{background:#f9f9f9;border-bottom:1px solid #dadada;height:25px;line-height:25px;font-size:12px;color:#4c4c4c;padding-left:7px}.citylist_popup_main .city_content_top{position:relative;height:30px;padding:15px 10px 0px 10px;border-bottom:1px solid #CCC;margin:0px 10px}.citylist_popup_main .city_content_top .cur_city_info{display:inline-block;margin:0;padding:0;}#city_ctrl_form{position:absolute;right:12px;top:10px}#selCityWd{border:1px solid #ccc;height:20px;width:121px;line-height:20px;text-indent:4px;outline:none}#selCitySubmit:hover{background-position:-355px -98px}#selCitySubmit{float:right;background:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/index_a2f1ac4.png) no-repeat scroll -302px -98px;height:24px;line-height:24px;width:48px;cursor:pointer;margin-left:5px;text-align:center}#sel_city_letter_list{padding-top:10px}#sel_city_letter_list a{white-space:nowrap;margin-right:11px;line-height:18px;font-size:13px;font-family:Arial,Helvetica,SimSun,sans-serif}.city_content_medium{padding:10px 10px 10px 10px;border-bottom:1px solid #CCC;margin:0px 10px}.city_content_bottom{padding:10px 10px 10px 8px;margin:9px 5px 5px 5px;height:218px;overflow-y:auto}#city_detail_table tr td{vertical-align:top}.sel_city_hotcity a{color:#3d6dcc}.sel_city_letter{padding:0 14px 0 3px}.sel_city_letter div{font-size:24px;line-height:24px;font-weight:700;color:#ccc;padding:0;margin:0;font-family:Arial,Helvetica,SimSun,sans-serif}.sel_city_sf{padding-right:8px;font-weight:700}.sel_city_sf a{white-space:nowrap;line-height:18px;color:#3d6dcc}.city_names_wrap{margin-bottom:9px}.sel_city_name{color:#3d6dcc;white-space:nowrap;margin-right:9px;line-height:18px;float:left}#popup_close{outline:none;position:absolute;z-index:50;top:7px;right:6px;width:12px;height:12px;background:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/popup_close_15d2283.gif) no-repeat;border:0;cursor:pointer}</style></head>
+<body style="margin: 0px;">
+<div id="contenter_"> 
+    <!-- 头部包含    -->
+<div id="header">
+<!-- header begin -->
+<!-- area1 -->
+<link rel="stylesheet" type="text/css" href="http://www.0573fang.com/statics/images/map/header-m.css">
+<div id="area1">
+  <div style="float:left;height:29px;line-height:29px;font-size:12px;padding-left:10px;" id="memberfirst"><a href="http://www.0573fang.com/index.php?g=Member&amp;a=login">[会员登录]</a> <a href="http://www.0573fang.com/index.php?g=Member&amp;a=register" style="color:#f26858">[免费注册 发布房源]</a> <a href="http://www.0573fang.com/shortcut.php" target="_blank" title="将本站保存到桌面">[设为桌面]</a></div>
+  <div id="area1_r" style="float:right;">
+    <ul>
+      <li class="a1_1"><a href="http://www.0573fang.com/" class="f14">首页</a></li>
+	  <li class="a1_1"><a href="http://www.0573fang.com/news/" class="f14">资讯</a></li>
+	  <li class="a1_1"><a href="http://www.0573fang.com/newhouse/" class="f14">新楼盘</a></li>
+	  <li class="a1_1"><a href="http://www.0573fang.com/second/" class="f14">二手房</a></li>
+	  <li class="a1_1"><a href="http://www.0573fang.com/rent/" class="f14">租房</a></li>
+	  <li class="a1_1" style="border:0px;"><a href="http://www.0573fang.com/community/" class="f14">小区</a></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+//顶部部登录
+$.get("http://www.0573fang.com/index.php?g=Member&m=Ajax", {"act":"memberfirst_simple"},
+function (data)
+{
+$("#memberfirst").html(data.info);
+},'json'
+);
+</script>
+
+<div id="area2_">
+    <div id="area2_1">
+
+        <div id="area2_m1">
+        <!-- logo包含 -->
+        
+        <div id="area2_m11"><a title="嘉论房产网" href="http://www.0573fang.com/"><img src="http://www.0573fang.com/statics/0573ren/images/logosmall.png" border="0"></a></div>
+        
+        <div id="area2_m13"></div>
+        <div id="area2_m14">
+            <ul id="nav">
+                <!--<li menu="mgs">商家地图</li>
+                <li menu="mai">二手房地图</li>
+                <li menu="zhu">租房地图</li>
+                <li menu="xiaoqu">小区地图</li>-->
+				<li menu="xin" class="current">租房地图</li>
+				<li><a href="http://www.0573fang.com/map/secondhouse/" style="color:#E92C2C;font-size:14px;">二手房地图</a></li>
+				<li><a href="http://www.0573fang.com/map/#mode=xin" style="color:#E92C2C;font-size:14px;">新房地图</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--sou suo kuang     start     -->
+    <div id="area2_3">
+        <div id="area2_31"></div>
+        <div id="area2_32">找房条件：</div>
+    <div id="area2_33"><b>楼盘</b>：
+          <input type="text" size="12" id="keyword">
+      </div>
+      <div id="area2_34">
+          <input name="" type="image" src="http://www.0573fang.com/statics/images/map/dt_bu.gif" onclick="searchkw($(&#39;#keyword&#39;).val());">
+      </div>
+    </div>
+    <div id="area10" style="height: 612px;">
+	<div class="map_tip_loading" style="display: none; left: 496.5px;"><i class="loading_pic"></i><b>房源加载中</b></div>
+
+
+     <div id="area10_1" style="display:none;">
+	  <div class="markbg"></div>
+		<div class="mark">
+			<table width="100%">
+				<tbody><tr>
+					<td style="text-align: center; height: 12px; padding-left: 0px;">
+						房源显示区域
+						<br>
+						－－－－－
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk201" type="checkbox" checked="checked" onclick="listAreaw(this)" value="中心城区">
+						<label for="colorChk201"><span>中心城区</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk202" type="checkbox" checked="checked" onclick="listAreaw(this)" value="南湖新区">
+						<label for="colorChk202"><span>南湖新区</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk203" type="checkbox" checked="checked" onclick="listAreaw(this)" value="秀洲新区">
+						<label for="colorChk203"><span>秀洲新区</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk205" type="checkbox" checked="checked" onclick="listAreaw(this)" value="城西区">
+						<label for="colorChk205"><span>城西区</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk206" type="checkbox" checked="checked" onclick="listAreaw(this)" value="城北区">
+						<label for="colorChk206"><span>城北区</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk204" type="checkbox" checked="checked" onclick="listAreaw(this)" value="西南区">
+						<label for="colorChk204"><span>西南区</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk207" type="checkbox" checked="checked" onclick="listAreaw(this)" value="国际商务区">
+						<label for="colorChk207"><span>国际商务区</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk208" type="checkbox" checked="checked" onclick="listAreaw(this)" value="城南区">
+						<label for="colorChk208"><span>城南区</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left; height: 2px; padding-left: 0px;">
+						<input id="colorChk209" type="checkbox" checked="checked" onclick="listAreaw(this)" value="湘家荡">
+						<label for="colorChk209"><span>湘家荡</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center; height: 2px; padding-left: 0px;">
+						<input id="colorChk0" type="checkbox" checked="checked" onclick="checkAll();" value="">
+						<label for="colorChk0"><span>显示全部</span></label>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+    </div>
+
+
+    <!--zuo ce lan     start     -->
+    <div id="map_canvas" style="overflow: hidden; position: relative; z-index: 0; color: rgb(0, 0, 0); text-align: left; width: 1173px; background-color: rgb(243, 241, 236);"><div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;http://api0.map.bdimg.com/images/openhand.cur&quot;) 8 8, default;"><div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; -webkit-user-select: none; width: 1173px; height: 612px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"><div class="areas" style="position: absolute; z-index: 0; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: -839520px; top: 223979px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;"></span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">77套</span></div><div class="areas" style="position: absolute; z-index: -6153706; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 639px; top: 187px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">中心城区</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">1452套</span></div><div class="areas" style="position: absolute; z-index: -6150404; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 806px; top: 320px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">南湖新区</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">1953套</span></div><div class="areas" style="position: absolute; z-index: -6157738; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 245px; top: 25px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">秀洲新区</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">560套</span></div><div class="areas" style="position: absolute; z-index: -6150664; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 323px; top: 310px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">西南区</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">117套</span></div><div class="areas" style="position: absolute; z-index: -6154338; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 363px; top: 161px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">城西区</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">376套</span></div><div class="areas" style="position: absolute; z-index: -6157118; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 643px; top: 49px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">城北区</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">107套</span></div><div class="areas" style="position: absolute; z-index: -6147088; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 629px; top: 454px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">国际商务区</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">199套</span></div><div class="areas" style="position: absolute; z-index: -6149920; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 481px; top: 339px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">城南区</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">147套</span></div><div class="areas" style="position: absolute; z-index: -6161362; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: 1076px; top: -121px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;">湘家荡</span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">9套</span></div><div class="areas" style="position: absolute; z-index: 0; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: -839520px; top: 223979px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;"></span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">1套</span></div><div class="areas" style="position: absolute; z-index: 0; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: -839520px; top: 223979px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;"></span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">32套</span></div><div class="areas" style="position: absolute; z-index: 0; cursor: pointer; width: 74px; height: 40px; padding: 20px 0px 14px; color: white; font-size: 14px; text-align: center; -webkit-user-select: none; left: -839520px; top: 223979px; background: url(&quot;345_files/mark32-1.png&quot;) -92px -92px no-repeat scroll rgba(0, 0, 0, 0);"><span style="display: block; font-weight: 700;"></span><span style="display: block; font-size: 12px; height: 22px; line-height: 22px;">69套</span></div><label class="BMapLabel" unselectable="on" style="position: absolute; display: none; cursor: inherit; border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -20000; color: rgb(190, 190, 190); background-color: rgb(190, 190, 190);">shadow</label></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;"><div style="position: absolute; overflow: visible; z-index: -100; left: 586px; top: 306px; display: block; transform: translate3d(0px, 0px, 0px);"><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=3282&amp;y=873&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: 86px; top: -56px; max-width: none; opacity: 1;"><img src="http://online4.map.bdimg.com/tile/?qt=tile&amp;x=3281&amp;y=873&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -170px; top: -56px; max-width: none; opacity: 1;"><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=3283&amp;y=873&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: 342px; top: -56px; max-width: none; opacity: 1;"><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=3282&amp;y=874&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: 86px; top: -312px; max-width: none; opacity: 1;"><img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=3280&amp;y=873&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -426px; top: -56px; max-width: none; opacity: 1;"><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=3281&amp;y=874&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -170px; top: -312px; max-width: none; opacity: 1;"><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=3283&amp;y=874&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: 342px; top: -312px; max-width: none; opacity: 1;"><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=3279&amp;y=873&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -682px; top: -56px; max-width: none; opacity: 1;"><img src="http://online4.map.bdimg.com/tile/?qt=tile&amp;x=3280&amp;y=874&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -426px; top: -312px; max-width: none; opacity: 1;"><img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=3279&amp;y=874&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -682px; top: -312px; max-width: none; opacity: 1;"><img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=3281&amp;y=872&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -170px; top: 200px; max-width: none; opacity: 1;"><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=3280&amp;y=872&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -426px; top: 200px; max-width: none; opacity: 1;"><img src="http://online4.map.bdimg.com/tile/?qt=tile&amp;x=3282&amp;y=872&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: 86px; top: 200px; max-width: none; opacity: 1;"><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=3279&amp;y=872&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: -682px; top: 200px; max-width: none; opacity: 1;"><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=3283&amp;y=872&amp;z=14&amp;styles=pl&amp;scaler=1&amp;udt=20170301" style="position: absolute; border: none; width: 256px; height: 256px; left: 342px; top: 200px; max-width: none; opacity: 1;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: none;"><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 0; display: none;"></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 10; display: none;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div></div><div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div><a class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;"><span style="float:right;margin-right:12px;">出口</span></a><div class=" anchorBL" style="height: 32px; position: absolute; z-index: 30; bottom: 20px; right: auto; top: auto; left: 1px;"><a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: none;"><img style="border:none;width:77px;height:32px" src="http://api0.map.bdimg.com/images/copyright_logo.png"></a></div><div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api0.map.bdimg.com/images/openhand.cur) 8 8,default"><div class="BMap_zoomer" style="top:0;left:0;"></div><div class="BMap_zoomer" style="top:0;right:0;"></div><div class="BMap_zoomer" style="bottom:0;left:0;"></div><div class="BMap_zoomer" style="bottom:0;right:0;"></div></div><div unselectable="on" class=" BMap_cpyCtrl BMap_noprint anchorBL" style="cursor: default; white-space: nowrap; color: black; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 11px; line-height: 15px; font-family: arial, sans-serif; bottom: 2px; right: auto; top: auto; left: 2px; position: absolute; z-index: 10; background: none;"><span _cid="1" style="display: inline;"><span style="background: rgba(255, 255, 255, 0.701961);padding: 0px 1px;line-height: 16px;display: inline;height: 16px;">©&nbsp;2017 Baidu - GS(2015)2650号&nbsp;- Data © 长地万方</span></span></div></div>
+    <!--zuo ce lan     end     -->
+    <!--zhong jian lan     start     -->
+    <div id="area10_2" class="toggle" style=""></div>
+    <!--zhong jian lan     end     -->
+     
+     <!--you ce lan     start     -->
+     
+    <div id="area10_3">
+        <div id="area10_4">
+        <div id="area10_5">搜索结果<input type="text" id="areaStr" style="display:none;"><input type="text" id="listact" value="loupan" style="display:none;"></div>
+        <div id="area10_6"></div>
+        </div>
+        <div class="area10_7">
+			<span id="mapCountTip" style="font-size: 12px;">&nbsp;共找到682个租房所在楼盘!</span>
+        </div>
+        <div id="map_Tips_Page" style="height: 20px;">
+			<table border="0" cellspacing="0" cellpadding="0" align="left">
+				<tbody><tr>
+				<td align="left" width="46" id="map_Tips_Page_Pre" onclick="preData();" style="cursor:pointer;">上一页</td>
+				<td align="center" width="60" id="map_Tips_Page_Mid">第1/46页</td>
+				<td align="left" width="46" id="map_Tips_Page_Next" onclick="nextData();" style="cursor:pointer;">下一页</td>
+				</tr>
+			</tbody></table>
+        </div>
+        <div id="map_Tips"><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21736&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21736&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">虹桥新村</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21736);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：1600元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21735&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21735&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">中港城新世纪单身公寓</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21735);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：1300元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21652&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21652&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">同方2008燕雨林苑</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21652);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：1200元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21650&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21650&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">塘汇路</span>【2套】&nbsp;[<a href="javascript:;" onclick="listFang(21650);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：45000元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21649&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21649&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">嘉兴国际中港城新世纪</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21649);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：1400元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21645&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21645&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">探花苑8-506</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21645);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：1800元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21631&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21631&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">台升怡府</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21631);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：2000元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21615&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21615&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">宝格丽公馆商铺</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21615);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：384300元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21611&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21611&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">景湖花园东区</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21611);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：2200元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21610&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21610&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">世贸尚景蓝湾</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21610);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：2000元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21609&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21609&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">浙江嘉兴文贤路文贤苑</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21609);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：1000元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21605&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21605&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">洪仁路</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21605);" class="lan">详情</a>]<br> 所在区域：秀洲新区<br>均价：800元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21596&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21596&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">秀洲江南摩尔</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21596);" class="lan">详情</a>]<br> 所在区域：秀洲新区<br>均价：1400元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21595&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21595&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">越秀南路-文秀里</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21595);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：1200元/m²<br>建设年份：null</div><div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point(NaN,NaN), 15);" onmouseover="$(&#39;.loupan21591&#39;).css(&#39;background-color&#39;,&#39;#2b9225&#39;);this.style.background=&#39;white&#39;" onmouseout="$(&#39;.loupan21591&#39;).css(&#39;background-color&#39;,&#39;#EE5D5B&#39;);this.style.background=&#39;#FAFAFA&#39;"><span class="hei33 bold">公交宿舍</span>【1套】&nbsp;[<a href="javascript:;" onclick="listFang(21591);" class="lan">详情</a>]<br> 所在区域：南湖新区<br>均价：1500元/m²<br>建设年份：null</div></div>
+        <div class="ie6bug">1234567890</div>
+    </div>
+    <!--you ce lan     end     -->
+     
+    </div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+function _resize() {
+	var _width = $("html").width();
+	var _height = $(window).height();
+	_width = _width - 250;
+	_height = _height - 160;
+	$("#map_canvas").width(_width);
+	$("#area10").height(_height);
+	$('#area10_2').show();
+	$('#area10_3').show();
+	$('.map_tip_loading').css('left', _width/2-90);//加载提示框位置
+}
+
+function initialize() {
+	_resize();
+}
+
+$(window).resize(function(){
+   _resize();
+});
+</script>
+
+<script type="text/javascript">
+	var area = new Array();
+	var xiaoqu = new Array();
+	area[0] = '||77套';area[1] = '120.755229,30.768538|中心城区|1452套';area[2] = '120.779122,30.752021|南湖新区|1953套';area[3] = '120.698589,30.788698|秀洲新区|560套';area[4] = '120.709799,30.753325|西南区|117套';area[5] = '120.715549,30.771696|城西区|376套';area[6] = '120.755793,30.785596|城北区|107套';area[7] = '120.753781,30.735447|国际商务区|199套';area[8] = '120.732509,30.749601|城南区|147套';area[9] = '120.818027,30.806814|湘家荡|9套';area[10] = '||1套';area[11] = '||32套';area[12] = '||69套';	xiaoqu[28] = new Array(6,'恒大绿洲','1850','120.7645,30.821956','206');xiaoqu[39] = new Array(25,'龙盛·华城右岸','2472','120.696085,30.757305','203');xiaoqu[44] = new Array(11,'新月公寓','2428','120.707399,30.754333','201');xiaoqu[45] = new Array(18,'金都佳苑','4267','120.698129,30.761936','203');xiaoqu[48] = new Array(8,'赞成·清华府邸','2288','120.743794,30.744758','201');xiaoqu[51] = new Array(22,'嘉业·阳光城','2887','120.713615,30.768294','203');xiaoqu[220] = new Array(14,'斜西街小区','1132','120.753397,30.764562','202');xiaoqu[221] = new Array(3,'沙龙公寓','1367','120.756545,30.761071','201');xiaoqu[222] = new Array(11,'金都·九月洋房·朗轩','3246','120.694315,30.760385','203');xiaoqu[223] = new Array(17,'江南Mall','1230','120.715542,30.769065','203');xiaoqu[224] = new Array(18,'东升苑','1058','120.74255,30.779029','201');xiaoqu[226] = new Array(2,'中楠·穆溪左岸','1800','120.748739,30.800404','206');xiaoqu[227] = new Array(77,'翰林府第','2750','120.775441,30.746613','202');xiaoqu[228] = new Array(6,'佳源都市','2023','120.778958,30.784971','206');xiaoqu[230] = new Array(28,'万家花园','2033','120.783544,30.75656','201');xiaoqu[231] = new Array(76,'新湖绿都','1732','120.774884,30.765621','202');xiaoqu[232] = new Array(14,'文星花园·探花苑','3540','120.779987,30.751299','202');xiaoqu[233] = new Array(15,'天城园林居','2077','120.744917,30.754387','201');xiaoqu[234] = new Array(18,'城南花园','1551','120.749507,30.756963','208');xiaoqu[235] = new Array(31,'盛大花园','2034','120.737245,30.780577','201');xiaoqu[236] = new Array(12,'清河西区','1038','120.750141,30.783229','201');xiaoqu[238] = new Array(6,'穆湖花园','1845','120.751641,30.788787','206');xiaoqu[239] = new Array(9,'嘉州美都一期欢乐园','1900','120.739527,30.784416','203');xiaoqu[240] = new Array(7,'嘉州美都二期欢快园','1750','120.738521,30.783803','201');xiaoqu[241] = new Array(15,'南溪花园','2107','120.775181,30.76329','202');xiaoqu[242] = new Array(7,'富安臻园','1886','120.753577,30.784517','202');xiaoqu[243] = new Array(16,'秀水人家','1488','120.766535,30.775799','201');xiaoqu[244] = new Array(9,'越秀花园','57678','120.736495,30.762483','201');xiaoqu[245] = new Array(14,'耀城广场','9536','120.736176,30.764973','201');xiaoqu[246] = new Array(1,'加洲长岛','330','120.764356,30.785293','201');xiaoqu[247] = new Array(17,'王安里','1374','120.739972,30.751133','201');xiaoqu[248] = new Array(7,'建明公寓','1450','120.735768,30.773006','201');xiaoqu[249] = new Array(5,'放鹤洲花园三期','2420','120.739078,30.782756','203');xiaoqu[250] = new Array(3,'东菱·梅湾花园','8500','120.751183,30.757301','201');xiaoqu[251] = new Array(4,'陆家苑','1275','120.737448,30.770563','201');xiaoqu[252] = new Array(2,'放鹤洲花园二期','2500','120.748259,30.749142','201');xiaoqu[253] = new Array(82,'旭辉广场','2121','120.753303,30.767018','201');xiaoqu[254] = new Array(35,'赞成·学仕苑','1739','120.778011,30.747125','201');xiaoqu[255] = new Array(14,'风清云都','2288','120.738665,30.773712','201');xiaoqu[258] = new Array(9,'禾东公寓','1034','120.782897,30.782904','201');xiaoqu[259] = new Array(1,'花园小区','1500','120.742227,30.778335','201');xiaoqu[260] = new Array(11,'菜花泾社区','1141','120.767276,30.779045','201');xiaoqu[261] = new Array(3,'怡景苑','1967','120.748564,30.776287','206');xiaoqu[262] = new Array(12,'嘉州美都三期欢欣园','2159','120.738539,30.7838','201');xiaoqu[263] = new Array(138,'巴黎都市','3450','120.785134,30.747932','202');xiaoqu[264] = new Array(5,'中央花园','2320','120.743336,30.765214','201');xiaoqu[265] = new Array(4,'福临新家园','1725','120.752094,30.786561','201');xiaoqu[266] = new Array(11,'赞成·中山名都','5055','120.753253,30.767886','201');xiaoqu[267] = new Array(11,'农翔苑','1473','120.784168,30.754376','202');xiaoqu[268] = new Array(1,'天华苑','2800','120.786315,30.762246','202');xiaoqu[269] = new Array(36,'康桥花园','2367','120.792473,30.748491','202');xiaoqu[270] = new Array(75,'格林小镇','2697','120.792087,30.745763','202');xiaoqu[271] = new Array(10,'当代华府','2590','120.802844,30.756339','202');xiaoqu[272] = new Array(6,'国际·中港城新世纪公','1234','120.798595,30.747016','202');xiaoqu[273] = new Array(10,'水榭花都','2410','120.791382,30.746039','202');xiaoqu[274] = new Array(32,'赞成·丽景苑','1660','120.795438,30.76528','202');xiaoqu[275] = new Array(19,'郁金香岸','2458','120.8039,30.75436','202');xiaoqu[276] = new Array(58,'蔚蓝·澳洲花园','2525','120.789495,30.749344','202');xiaoqu[277] = new Array(58,'格兰英郡','2236','120.807057,30.748518','202');xiaoqu[278] = new Array(12,'信达东郡','2342','120.792586,30.757021','202');xiaoqu[279] = new Array(33,'同方·2008（燕语','1732','120.793515,30.758658','202');xiaoqu[280] = new Array(2,'御溪半岛','2400','120.796039,30.752851','202');xiaoqu[281] = new Array(5,'金都夏宫·笛园','1860','120.813076,30.754244','202');xiaoqu[282] = new Array(12,'景湖花园','1634','120.802894,30.760346','202');xiaoqu[283] = new Array(27,'中山·怡和园','1899','120.791413,30.756059','202');xiaoqu[284] = new Array(15,'赞成·紫竹名苑','1874','120.791629,30.759632','202');xiaoqu[285] = new Array(25,'双溪花园','1594','120.800392,30.760094','202');xiaoqu[286] = new Array(49,'广宜文苑','2148','120.790322,30.744111','202');xiaoqu[287] = new Array(16,'国际·中港城','1966','120.799422,30.743804','202');xiaoqu[288] = new Array(12,'文星花园·海棠苑','1813','120.775167,30.751001','202');xiaoqu[289] = new Array(3,'力宝·翡翠花园','1567','120.793623,30.753798','202');xiaoqu[290] = new Array(21,'金都·夏宫','1843','120.81308,30.75424','202');xiaoqu[291] = new Array(13,'皇都花苑','2270','120.794054,30.75791','202');xiaoqu[292] = new Array(6,'佳源·英伦都市','1667','120.820626,30.747932','202');xiaoqu[293] = new Array(1,'翠湖壹号','3000','120.808768,30.753999','202');xiaoqu[294] = new Array(28,'泾水公寓一期','1533','120.795384,30.762177','202');xiaoqu[295] = new Array(6,'紫轩公寓','4437','120.801618,30.749197','202');xiaoqu[296] = new Array(1,'亚太花苑','1000','120.820761,30.749794','202');xiaoqu[297] = new Array(2,'格兰英郡四期','3000','120.807066,30.74844','202');xiaoqu[298] = new Array(27,'百盛花园','2797','120.785305,30.751687','202');xiaoqu[299] = new Array(15,'泾水公寓三期','1850','120.794827,30.762952','202');xiaoqu[300] = new Array(17,'久久小区','1556','120.794791,30.734306','202');xiaoqu[301] = new Array(13,'中南公寓','1108','120.792815,30.735718','202');xiaoqu[304] = new Array(16,'文星花园·长中苑','2238','120.776829,30.751063','202');xiaoqu[306] = new Array(30,'栅堰新村','1209','120.74944,30.771106','201');xiaoqu[307] = new Array(4,'电子小区中兴苑','1263','120.742518,30.775279','201');xiaoqu[309] = new Array(13,'松合里','1458','120.749157,30.753425','201');xiaoqu[310] = new Array(16,'百墅花园','5182','120.738094,30.780666','205');xiaoqu[311] = new Array(5,'王冠里','1390','120.741997,30.752133','201');xiaoqu[312] = new Array(5,'菱香坊','1900','120.77302,30.753258','201');xiaoqu[313] = new Array(5,'电子小区中波苑','1430','120.744796,30.775236','201');xiaoqu[315] = new Array(2,'西园里','1000','120.745411,30.764993','201');xiaoqu[316] = new Array(14,'文经里','1211','120.743273,30.757801','201');xiaoqu[318] = new Array(16,'电子小区中意苑','1288','120.743107,30.775973','201');xiaoqu[319] = new Array(11,'嘉城景帆苑','1043','120.761423,30.78233','201');xiaoqu[320] = new Array(4,'半岛公寓','3275','120.7509,30.774697','201');xiaoqu[321] = new Array(17,'枫杨坊','1175','120.779951,30.764659','201');xiaoqu[323] = new Array(5,'越秀北苑','1470','120.739473,30.776326','202');xiaoqu[324] = new Array(5,'虹泰西区','1760','120.734407,30.775698','201');xiaoqu[325] = new Array(10,'世纪广场','4220','120.733796,30.765357','201');xiaoqu[326] = new Array(1,'云洲苑','2600','120.78376,30.754977','201');xiaoqu[328] = new Array(1,'电子小区中秀苑','1100','120.740722,30.77614','201');xiaoqu[329] = new Array(24,'烟雨社区','1834','120.771938,30.750353','201');xiaoqu[330] = new Array(5,'放鹤洲花园一期','4080','120.749781,30.754302','201');xiaoqu[331] = new Array(1,'百隆花园','2000','120.786208,30.765353','201');xiaoqu[333] = new Array(3,'清沁苑','1767','120.755512,30.785269','201');xiaoqu[334] = new Array(8,'吉水花园','1725','120.744984,30.760675','201');xiaoqu[335] = new Array(6,'文纬里','1275','120.742042,30.757526','201');xiaoqu[336] = new Array(4,'文运里','1150','120.745528,30.757382','201');xiaoqu[338] = new Array(1,'名湖人家','500','120.773173,30.755','202');xiaoqu[339] = new Array(11,'阳光广场','1200','120.754187,30.77785','201');xiaoqu[341] = new Array(1,'文星花园·汇龙苑','1400','120.779767,30.748204','201');xiaoqu[342] = new Array(6,'吉明里','809','120.743475,30.762731','201');xiaoqu[343] = new Array(2,'清风阁','1050','120.752885,30.775291','201');xiaoqu[344] = new Array(10,'凯旋广场','1763','120.733985,30.768371','201');xiaoqu[345] = new Array(6,'怡南花园','1917','120.7471,30.753103','201');xiaoqu[346] = new Array(2,'富安御园','2950','120.753572,30.784498','201');xiaoqu[347] = new Array(8,'涌鑫公寓','1382','120.761086,30.771563','201');xiaoqu[348] = new Array(12,'嘉华广场','2142','120.761015,30.768992','201');xiaoqu[349] = new Array(3,'鹤翔里','1267','120.748887,30.752013','201');xiaoqu[350] = new Array(10,'汇龙苑','1580','120.779758,30.748204','201');xiaoqu[351] = new Array(6,'电子小区银秀苑','1092','120.740928,30.775318','201');xiaoqu[354] = new Array(5,'文秀里','1160','120.740376,30.758654','201');xiaoqu[355] = new Array(11,'吉杨里','1019','120.744629,30.761831','201');xiaoqu[356] = new Array(3,'放鹤洲花园','3100','120.749781,30.75431','201');xiaoqu[357] = new Array(6,'烟湖苑','1750','120.772508,30.7465','202');xiaoqu[360] = new Array(1,'百家公寓','1000','120.739931,30.78639','205');xiaoqu[361] = new Array(1,'南湖小区','1400','120.773712,30.754422','202');xiaoqu[362] = new Array(9,'佳景苑','1045','120.751187,30.771912','201');xiaoqu[363] = new Array(1,'文昌里','1300','120.745016,30.756893','201');xiaoqu[364] = new Array(4,'牡丹坊','1250','120.78137,30.76253','201');xiaoqu[365] = new Array(11,'银柳坊','1282','120.781797,30.758697','201');xiaoqu[368] = new Array(10,'望秀苑','1610','120.739922,30.770221','201');xiaoqu[370] = new Array(2,'金鼎广场','1250','120.759676,30.771753','201');xiaoqu[371] = new Array(5,'真合里','980','120.742577,30.751586','201');xiaoqu[373] = new Array(3,'龙鑫公寓','1334','120.748488,30.779064','201');xiaoqu[375] = new Array(7,'嘉州美都五期欢聚园','1922','120.73955,30.784408','201');xiaoqu[378] = new Array(9,'松鹤小区','1135','120.747904,30.753883','201');xiaoqu[379] = new Array(11,'石榴坊','1182','120.780131,30.760004','201');xiaoqu[380] = new Array(5,'鹿都景苑','1920','120.753532,30.771059','201');xiaoqu[383] = new Array(1,'紫欣公寓','350','120.757897,30.76296','201');xiaoqu[384] = new Array(2,'西南湖公寓','1450','120.747953,30.753906','201');xiaoqu[385] = new Array(33,'国际电气城','1023','120.815254,30.743238','202');xiaoqu[386] = new Array(27,'万好家居','1466','120.806909,30.743459','202');xiaoqu[390] = new Array(6,'庆丰苑','1667','120.808697,30.759201','202');xiaoqu[392] = new Array(12,'雨润天阁','2109','120.806541,30.757584','202');xiaoqu[393] = new Array(21,'嘉富·好第坊','1817','120.832592,30.74278','202');xiaoqu[394] = new Array(14,'佳源·东方都市','1665','120.824767,30.738613','202');xiaoqu[396] = new Array(21,'烟波苑','1543','120.773142,30.748995','202');xiaoqu[397] = new Array(11,'铂金府邸','2564','120.809563,30.746066','202');xiaoqu[398] = new Array(83,'云东公寓','1621','120.797948,30.734783','202');xiaoqu[399] = new Array(44,'中成新世纪公寓','1577','120.798609,30.746978','202');xiaoqu[400] = new Array(1,'黎明苑','700','120.82077,30.715618','202');xiaoqu[401] = new Array(3,'信源商业城','800','120.81785,30.735462','202');xiaoqu[402] = new Array(8,'泰富商业广场','2188','120.790192,30.758158','202');xiaoqu[403] = new Array(4,'亲水湾','1925','120.816512,30.74548','202');xiaoqu[404] = new Array(14,'协和广场','1322','120.788045,30.75791','202');xiaoqu[405] = new Array(2,'格兰英郡三期','1450','120.807053,30.748502','202');xiaoqu[406] = new Array(7,'华章·御上江南','2115','120.826339,30.740351','202');xiaoqu[407] = new Array(13,'汇金广场','1635','120.792541,30.744017','202');xiaoqu[409] = new Array(9,'龙翔大厦','1400','120.806397,30.743556','202');xiaoqu[416] = new Array(2,'信达·南郡','2750','120.81074,30.673388','202');xiaoqu[418] = new Array(5,'嘉兴世界贸易中心','7280','120.802229,30.743214','202');xiaoqu[421] = new Array(4,'嘉兴总部商务花园','1200','120.824507,30.744983','202');xiaoqu[424] = new Array(1,'苹果假日','1850','120.80761,30.743284','202');xiaoqu[431] = new Array(4,'民丰二村','1050','120.782179,30.769546','202');xiaoqu[436] = new Array(1,'南湖创业中心','400','120.785592,30.774883','202');xiaoqu[437] = new Array(9,'龙港大厦','14478','120.739491,30.755753','202');xiaoqu[439] = new Array(4,'中创国际公寓','1025','120.81326,30.744285','202');xiaoqu[446] = new Array(1,'化肥新村','1100','120.777939,30.76604','202');xiaoqu[447] = new Array(4,'她他花园','1013','120.826883,30.743067','202');xiaoqu[448] = new Array(1,'金桥·名苑','1350','120.863147,30.747358','202');xiaoqu[457] = new Array(1,'万丰小区','800',',','202');xiaoqu[461] = new Array(1,'皇冠花苑','500','120.773025,30.754698','202');xiaoqu[465] = new Array(1,'冶金新村','650','120.781783,30.763806','202');xiaoqu[467] = new Array(1,'徐王公寓','310','120.782969,30.780391','202');xiaoqu[475] = new Array(1,'嘉兴软件园','3000','120.833849,30.740421','202');xiaoqu[477] = new Array(5,'文南里','1020','120.745532,30.756319','201');xiaoqu[479] = new Array(5,'天星湖公寓','850','120.763952,30.770144','201');xiaoqu[480] = new Array(4,'电力嘉苑','243','120.759146,30.774728','201');xiaoqu[481] = new Array(2,'西园弄','1150','120.747122,30.764636','201');xiaoqu[483] = new Array(1,'清沁公寓','2500','120.755445,30.785293','201');xiaoqu[484] = new Array(4,'洪波苑','1313','120.745887,30.771889','201');xiaoqu[485] = new Array(2,'金福公寓','725','120.756748,30.771327','201');xiaoqu[486] = new Array(5,'彩虹公寓','1290','120.76719,30.77666','201');xiaoqu[488] = new Array(1,'同创公寓','1400','120.73963,30.775419','201');xiaoqu[490] = new Array(7,'同乐社区','1200','120.749786,30.775752','201');xiaoqu[492] = new Array(9,'水仙坊','1273','120.778037,30.758554','201');xiaoqu[493] = new Array(21,'大陆世嘉','1310','120.739442,30.76329','201');xiaoqu[496] = new Array(2,'禾兴公寓','1500','120.754008,30.773472','201');xiaoqu[498] = new Array(1,'康达公寓','1850','120.763301,30.767929','201');xiaoqu[503] = new Array(3,'清河社区','1200','120.752535,30.781942','201');xiaoqu[504] = new Array(4,'银秀苑','1200','120.74109,30.775655','201');xiaoqu[505] = new Array(9,'越秀南路520弄','1045','120.739577,30.754705','201');xiaoqu[507] = new Array(3,'中丝苑','1234','120.734308,30.771373','201');xiaoqu[508] = new Array(7,'南杨新村','1158','120.752705,30.76417','201');xiaoqu[512] = new Array(2,'好得利商厦','1900','120.763179,30.770101','201');xiaoqu[514] = new Array(6,'银建公寓','1534','120.782724,30.746854','201');xiaoqu[515] = new Array(2,'腾飞新村','1100','120.744414,30.751455','201');xiaoqu[517] = new Array(22,'越秀里','1148','120.740394,30.76232','201');xiaoqu[519] = new Array(4,'大地园林','2425','120.73014,30.76656','201');xiaoqu[520] = new Array(5,'兴波苑','1260','120.743947,30.769919','201');xiaoqu[522] = new Array(2,'邮电苑','700','120.745654,30.773611','201');xiaoqu[523] = new Array(1,'紫阳公寓','1000','120.759339,30.762576','201');xiaoqu[524] = new Array(6,'冶金二村','892',',','201');xiaoqu[526] = new Array(1,'兴业苑','1200','120.747199,30.751687','201');xiaoqu[531] = new Array(10,'新友谊公寓','1605','120.737165,30.774453','201');xiaoqu[533] = new Array(8,'金桥假日','1063','120.753002,30.785494','201');xiaoqu[534] = new Array(1,'银河印象','2500','120.753343,30.772622','201');xiaoqu[535] = new Array(2,'新虹桥花苑','1800','120.770249,30.775675','201');xiaoqu[536] = new Array(7,'吉杨公寓','1586','120.738355,30.76315','201');xiaoqu[537] = new Array(13,'百花新村','927','120.749143,30.780076','201');xiaoqu[538] = new Array(2,'天风阁','2000','120.781932,30.763259','202');xiaoqu[539] = new Array(2,'运南社区 ','950','120.745514,30.75739','201');xiaoqu[544] = new Array(3,'兰园公寓','1400','120.74701,30.778432','201');xiaoqu[547] = new Array(18,'竹桥小区','1341','120.740623,30.767995','201');xiaoqu[548] = new Array(3,'银泰花苑','2100','120.733688,30.769768','201');xiaoqu[550] = new Array(6,'天竹坊','1342','120.780746,30.762976','202');xiaoqu[559] = new Array(1,'清雅苑','2600','120.756842,30.784754','201');xiaoqu[560] = new Array(1,'东菱·天官坊','1300','120.749772,30.763728','201');xiaoqu[561] = new Array(20,'二毛二村','783','120.616563,30.80232','201');xiaoqu[562] = new Array(2,'同乐公寓','1400','120.753604,30.777544','201');xiaoqu[566] = new Array(2,'凌塘小区','900','120.782516,30.783338','201');xiaoqu[573] = new Array(4,'吉水小区','1275','120.745115,30.760594','201');xiaoqu[575] = new Array(1,'怡苑豪宅','2500','120.766139,30.773588','201');xiaoqu[577] = new Array(3,'大地公寓','2200','120.755378,30.761715','201');xiaoqu[579] = new Array(1,'卫校宿舍','850','120.754098,30.7723','201');xiaoqu[581] = new Array(1,'锦洲苑','2500','120.784981,30.762014','201');xiaoqu[582] = new Array(6,'朝东埭','942','120.752741,30.778351','201');xiaoqu[584] = new Array(2,'栅堰南区','1150','120.74842,30.769841','201');xiaoqu[585] = new Array(3,'真如新村','800','120.745928,30.752355','201');xiaoqu[586] = new Array(4,'翠园公寓','1375','120.748241,30.7801','201');xiaoqu[588] = new Array(17,'电子小区','1203','120.740919,30.775326','201');xiaoqu[590] = new Array(2,'中医院宿舍','1600','120.735206,30.767479','201');xiaoqu[597] = new Array(4,'光明苑','1525','120.751978,30.77453','201');xiaoqu[598] = new Array(1,'吉丽小区','950',',','201');xiaoqu[601] = new Array(1,' 虹桥新村','400','120.624239,30.798838','201');xiaoqu[602] = new Array(6,'中环广场','11534','120.738561,30.748809','201');xiaoqu[604] = new Array(1,'杜鹃坊','1000','120.780643,30.760637','201');xiaoqu[607] = new Array(1,' 春波景苑','1500','120.769009,30.77538','201');xiaoqu[610] = new Array(4,'丰乐园','1225','120.751286,30.775593','201');xiaoqu[611] = new Array(1,'电子小区中为苑','1200','120.74083,30.767692','201');xiaoqu[614] = new Array(6,'竹桥新村','1067','120.740713,30.767979','201');xiaoqu[617] = new Array(2,'嘉丝联宿舍','925','120.762003,30.780298','201');xiaoqu[627] = new Array(12,'湖滨花园','1180','120.772728,30.766583','201');xiaoqu[628] = new Array(1,'明月社区','900','120.744306,30.762053','201');xiaoqu[629] = new Array(1,'禾城商务楼','4500','120.758616,30.77142','201');xiaoqu[634] = new Array(4,'盛大·晶座','1500','120.737802,30.78143','201');xiaoqu[637] = new Array(3,'教工宿舍','1067','120.789823,30.800059','201');xiaoqu[642] = new Array(10,'府忠埭','1125','120.753469,30.76545','201');xiaoqu[643] = new Array(3,'粮食局宿舍','1294','120.750738,30.767739','201');xiaoqu[644] = new Array(4,'嘉悦大厦','1775','120.740174,30.765373','201');xiaoqu[645] = new Array(1,'汽钢宿舍','400','120.750127,30.759756','201');xiaoqu[646] = new Array(9,'公安宿舍','1767','120.753604,30.772649','201');xiaoqu[648] = new Array(3,'华美小区','850','120.775298,30.77915','201');xiaoqu[649] = new Array(4,'兴业大厦','5950','120.757556,30.768577','201');xiaoqu[652] = new Array(1,'水廊下','1600','120.757107,30.760474','201');xiaoqu[661] = new Array(1,'绝缘厂宿舍','800','120.747576,30.75462','201');xiaoqu[665] = new Array(3,'三秀弄','1100','120.757574,30.779739','201');xiaoqu[666] = new Array(8,'三水湾小区','1019','120.780292,30.760656','201');xiaoqu[670] = new Array(2,'城市富邦','11667','120.785413,30.777909','201');xiaoqu[672] = new Array(3,'国际丝贸中心','3334','120.733922,30.765295','201');xiaoqu[675] = new Array(10,'二毛一村','950','120.774022,30.758422','201');xiaoqu[678] = new Array(1,' 建国北路办公楼','28000','120.756164,30.786068','201');xiaoqu[679] = new Array(1,'吉安公寓','2500','120.744845,30.764954','201');xiaoqu[685] = new Array(2,'抱月村','875','120.751987,30.777176','201');xiaoqu[687] = new Array(10,'府南花园','1955','120.758275,30.735757','202');xiaoqu[690] = new Array(2,'中安国际金属城','1250','','203');xiaoqu[715] = new Array(7,'外月河公寓','1300','120.754601,30.768678','201');xiaoqu[718] = new Array(1,'太阳公寓','1000','120.755319,30.761091','201');xiaoqu[722] = new Array(1,'梅湾街商务中心','700','120.755499,30.761149','201');xiaoqu[723] = new Array(8,'杨柳湾社区','1063','120.752103,30.762503','201');xiaoqu[727] = new Array(2,'城南路干休所','925','120.748348,30.755598','201');xiaoqu[728] = new Array(2,'民丰三村','1150','120.782053,30.76559','201');xiaoqu[729] = new Array(12,'绢纺三村','800','120.775657,30.759973','201');xiaoqu[733] = new Array(1,'桂花苑','1500','120.747922,30.775488','201');xiaoqu[745] = new Array(3,'市心弄','1300','120.753536,30.76675','201');xiaoqu[746] = new Array(2,'电控厂宿舍','925','120.746727,30.7681','201');xiaoqu[758] = new Array(8,'百妙公寓','2150','120.734029,30.74607','208');xiaoqu[759] = new Array(5,'大树银河湾','1800','120.731083,30.728004','208');xiaoqu[760] = new Array(5,'福地广场','7828','120.733526,30.747497','208');xiaoqu[761] = new Array(2,'禾源新都','1250','120.72925,30.709905','208');xiaoqu[762] = new Array(1,'姜家村公寓','1300','120.738018,30.746473','208');xiaoqu[763] = new Array(1,'金穗太阳城','2500','120.727993,30.727973','208');xiaoqu[764] = new Array(20,'金穗月亮湾','1790','120.733185,30.739924','208');xiaoqu[765] = new Array(2,'巨匠·义圣名苑','2750','120.733634,30.74337','208');xiaoqu[770] = new Array(30,'长新公寓','1164','120.748582,30.738124','208');xiaoqu[771] = new Array(2,'紫元·尚园','1100','120.741566,30.741453','208');xiaoqu[772] = new Array(35,'昌盛花园','1380','120.72599,30.789143','205');xiaoqu[773] = new Array(21,'皇马公寓','2467','120.726627,30.772789','205');xiaoqu[774] = new Array(26,'米兰风景','2424','120.72828,30.774309','205');xiaoqu[775] = new Array(6,'天奥·金域兰庭','1692','120.732898,30.779987','205');xiaoqu[777] = new Array(2,'万豪广场','14543','120.731478,30.776551','205');xiaoqu[781] = new Array(30,'紫园','2739','120.729107,30.772401','205');xiaoqu[784] = new Array(14,'东方·普罗旺斯','2215','120.784838,30.729184','207');xiaoqu[786] = new Array(31,'都市·文涛苑','1553','120.784227,30.74278','207');xiaoqu[787] = new Array(26,'府南花园二期','1622','120.757466,30.735284','207');xiaoqu[788] = new Array(1,'府南花园四期','1200','120.756793,30.735082','207');xiaoqu[789] = new Array(26,'府南花园一期','1227','120.760332,30.737751','207');xiaoqu[791] = new Array(1,'华发雅苑','1200','120.759011,30.732381','207');xiaoqu[793] = new Array(1,'华盛广场','1500','120.788763,30.732156','207');xiaoqu[795] = new Array(4,'嘉兴万达广场','1413','120.806936,30.741662','207');xiaoqu[797] = new Array(10,'蓝天嘉苑','1590','120.756631,30.737751','207');xiaoqu[798] = new Array(7,'隆兴公寓','936','120.76105,30.728284','207');xiaoqu[800] = new Array(1,'南郊花园','1800','120.761554,30.723658','207');xiaoqu[801] = new Array(11,'石雪公寓','953','120.759676,30.722246','207');xiaoqu[802] = new Array(1,'石堰小区南区','1000','120.786742,30.715369','207');xiaoqu[803] = new Array(4,'石堰小区一期','3352','120.786275,30.715167','207');xiaoqu[804] = new Array(6,'世茂新城Ⅱ·卡门印象','2084','120.789149,30.710246','207');xiaoqu[805] = new Array(5,'世茂新城·尚景蓝湾','1560','120.792168,30.700124','207');xiaoqu[806] = new Array(1,'台昇国际广场','1000','120.7622,30.728687','207');xiaoqu[807] = new Array(2,'台昇国际广场·悦府','1000','120.761158,30.728967','207');xiaoqu[808] = new Array(3,'恒鑫·文锦苑','1500','120.788449,30.736355','207');xiaoqu[809] = new Array(7,'文贤苑','1000','120.783849,30.732071','207');xiaoqu[810] = new Array(1,'香缇世家','1300','120.783841,30.718714','207');xiaoqu[812] = new Array(5,'SOHO宜家','1500','120.731299,30.75483','204');xiaoqu[813] = new Array(1,'泊金湾·明珠广场','10750','120.731586,30.759399','204');xiaoqu[814] = new Array(2,'玫瑰恬园','1900','120.722468,30.752758','204');xiaoqu[816] = new Array(5,'旭辉御府','2120','120.72943,30.749049','204');xiaoqu[817] = new Array(62,'元一柏庄','2037','120.721759,30.75763','204');xiaoqu[818] = new Array(9,'慈光公寓','1800','120.762892,30.77296','201');xiaoqu[820] = new Array(9,'秀洲公寓','889','120.679341,30.762766','201');xiaoqu[826] = new Array(3,'幸福家园','1167','120.809056,30.67267','202');xiaoqu[828] = new Array(3,'隆禧大厦','8934','','203');xiaoqu[830] = new Array(1,'环北商贸大厦','1300','','202');xiaoqu[831] = new Array(15,'置地广场','2527','','202');xiaoqu[833] = new Array(26,'尚元名郡','1687','120.727364,30.763558','205');xiaoqu[834] = new Array(2,'江南摩尔','1900','','203');xiaoqu[835] = new Array(17,'都市先锋','1433','','205');xiaoqu[836] = new Array(3,'领秀智谷','3234','120.691378,30.766397','203');xiaoqu[837] = new Array(4,'紫金凰庭','3375','120.728334,30.787371','203');xiaoqu[838] = new Array(4,'殷秀花园','1500','120.708841,30.772587','203');xiaoqu[841] = new Array(8,'秋泾公寓','1044','120.76741,30.784641','206');xiaoqu[844] = new Array(23,'大树花园','2779','120.718956,30.76905','205');xiaoqu[845] = new Array(1,'秀仁苑','2500','120.727238,30.766059','205');xiaoqu[847] = new Array(8,'南秀花园','2375','120.738808,30.744545','208');xiaoqu[848] = new Array(2,'九里花苑','940','120.69763,30.792552','203');xiaoqu[849] = new Array(51,'云都大厦','1503','120.739401,30.77085','205');xiaoqu[851] = new Array(57,'江南太阳城','1530','120.768201,30.787961','206');xiaoqu[852] = new Array(1,'湘都公寓','900','','202');xiaoqu[854] = new Array(4,'华新花园','2525','','203');xiaoqu[856] = new Array(13,'永泰广场','18654','120.716504,30.764015','203');xiaoqu[858] = new Array(10,'梁林帆影庄','1445','120.715628,30.755365','205');xiaoqu[859] = new Array(12,'万科·金色梦想','2317','120.697078,30.793203','203');xiaoqu[860] = new Array(30,'金都景苑','2800','120.724934,30.764523','203');xiaoqu[863] = new Array(7,'天乐苑','1172','120.732763,30.726747','202');xiaoqu[866] = new Array(8,'和风丽园','1282','120.774417,30.796895','203');xiaoqu[868] = new Array(23,'新文化广场','1450','120.730077,30.755318','205');xiaoqu[872] = new Array(5,'万和大厦','860','','205');xiaoqu[873] = new Array(3,'泾水公寓二期','1700','','202');xiaoqu[875] = new Array(2,'中润·瑞安广场','8100','120.705742,30.767964','202');xiaoqu[877] = new Array(1,'中丝国贸中心','5600','','202');xiaoqu[878] = new Array(7,'名都绿洲','2915','120.705032,30.765652','203');xiaoqu[881] = new Array(2,'湘南公寓','775','120.839751,30.803068','209');xiaoqu[885] = new Array(15,'四季观邸','2039','120.720753,30.755396','208');xiaoqu[888] = new Array(1,'国际中港城新世纪公寓','3800','','202');xiaoqu[889] = new Array(6,'绿溪玫瑰园','2134','120.757538,30.742694','202');xiaoqu[890] = new Array(3,'府南花园三期','714','','202');xiaoqu[903] = new Array(12,'嘉禾绿洲','3017','120.700541,30.759357','203');xiaoqu[905] = new Array(1,'中纬大厦','1300','','208');xiaoqu[915] = new Array(29,'罗马都市','2483','120.799642,30.754201','202');xiaoqu[917] = new Array(49,'嘉城绿都','1754','120.791121,30.778304','202');xiaoqu[930] = new Array(1,'颐高数码港','2100','','203');xiaoqu[931] = new Array(11,'西马桥社区','1300','120.750967,30.788597','202');xiaoqu[933] = new Array(14,'大树金港湾','950','','208');xiaoqu[937] = new Array(10,'东方新家园','1360','120.770119,30.788081','202');xiaoqu[938] = new Array(5,'阳海景怡','1660','120.746309,30.801544','203');xiaoqu[939] = new Array(3,'中山花园','2300','120.719661,30.763872','203');xiaoqu[944] = new Array(1,'天星如意湾','750','','203');xiaoqu[947] = new Array(1,'蓝光·名仕公馆','3200','120.701331,30.75057','204');xiaoqu[953] = new Array(1,'御华名都','3500','120.798995,30.796523','206');xiaoqu[956] = new Array(4,'龙盛右岸名邸','780','','203');xiaoqu[961] = new Array(2,'海纳公馆','1050','','203');xiaoqu[967] = new Array(9,'元一柏庄现代广场','4512','','204');xiaoqu[970] = new Array(2,'环球国际','1550','','207');xiaoqu[971] = new Array(1,'嘉兴泰富世界城','1000','','202');xiaoqu[978] = new Array(1,'华玉佳苑','1000','120.798851,30.789426','209');xiaoqu[979] = new Array(1,'云间绿大地','2500','120.699193,30.768321','203');xiaoqu[980] = new Array(15,'盛世豪庭','5974','120.704008,30.764776','203');xiaoqu[981] = new Array(6,'友谊公寓','1117','','205');xiaoqu[986] = new Array(1,'新盛水岸','580','','203');xiaoqu[995] = new Array(2,'兴汇大厦','926','','203');xiaoqu[1001] = new Array(33,'洪兴花园','1969','120.724013,30.768398','205');xiaoqu[1004] = new Array(1,'阳海景怡南区','1500','','206');xiaoqu[1005] = new Array(1,'新禾家苑','2000','120.787793,30.800842','203');xiaoqu[1007] = new Array(10,'茶香坊','1041','120.798222,30.793932','203');xiaoqu[1016] = new Array(1,'国浩大厦','3000','','205');xiaoqu[1017] = new Array(1,'丝贸二期','650','','205');xiaoqu[1018] = new Array(6,'现代广场','2451','','205');xiaoqu[1019] = new Array(1,'远洋大厦','2000','','204');xiaoqu[1023] = new Array(18,'龙盛·右岸名邸','2217','120.696085,30.756746','203');xiaoqu[1031] = new Array(1,'江南新家园','300','120.823397,30.823751','209');xiaoqu[1035] = new Array(1,'天声公寓','650','','208');xiaoqu[1046] = new Array(12,'新亚·香榭水岸','2055','','203');xiaoqu[1049] = new Array(2,'天城花园西区','1000','120.734178,30.774201','203');xiaoqu[1052] = new Array(1,'总部商务花园','2300','','202');xiaoqu[1080] = new Array(1,'大华城市花园','2200','','202');xiaoqu[1082] = new Array(1,'秀亭商业街','1900','','203');xiaoqu[1085] = new Array(2,'泰富世界城','2350','120.724566,30.755493','204');xiaoqu[1087] = new Array(7,'亚厦风和苑','3115','120.713009,30.761866','203');xiaoqu[1089] = new Array(1,'中山怡和园','1500','120.791503,30.755737','202');xiaoqu[1098] = new Array(74,'万达华府','2293','120.805602,30.742','202');xiaoqu[1100] = new Array(1,'龙盛华城右岸','2500','','203');xiaoqu[1108] = new Array(4,'国浩广场','2800','','203');xiaoqu[1112] = new Array(2,'电子小区锦秀苑','1050','120.740057,30.774077','201');xiaoqu[1120] = new Array(1,'广益文苑','200','','202');xiaoqu[1123] = new Array(2,'平安家园','3759','','203');xiaoqu[1124] = new Array(28,'秀洲花园','2241','120.718354,30.762235','203');xiaoqu[1125] = new Array(1,'江南润园','4000','120.638001,30.798973','203');xiaoqu[2022] = new Array(2,'南湖星辰湾','1550','120.772369,30.788984','202');xiaoqu[2024] = new Array(2,'丁香花园','5750','120.727045,30.782535','203');xiaoqu[2032] = new Array(8,'春晓源燕园','1682','120.72077,30.775609','203');xiaoqu[2033] = new Array(13,'立达汇园','1493','','203');xiaoqu[20123] = new Array(3,'浙联金座','1867','','203');xiaoqu[20126] = new Array(1,'旭辉朗香郡','3500','','203');xiaoqu[20132] = new Array(7,'信达·香格里','1929','120.692694,30.761447','202');xiaoqu[20137] = new Array(3,'中润嘉兴中心','2034','','207');xiaoqu[20142] = new Array(1,'林湖世家','5000','','206');xiaoqu[20143] = new Array(1,'新华书店宿舍','1500','','202');xiaoqu[20145] = new Array(6,'泾水公寓','2017','','202');xiaoqu[20151] = new Array(5,'财富豪庭','4900','120.725788,30.765567','203');xiaoqu[20181] = new Array(16,'颐高广场','1441','120.731465,30.756831','202');xiaoqu[20194] = new Array(3,'举秀苑','1127','120.794813,30.730736','207');xiaoqu[20195] = new Array(10,'名人国际花园','2650','120.733473,30.771203','203');xiaoqu[20202] = new Array(1,'翰林府邸','2500','','202');xiaoqu[20206] = new Array(6,'禾城世纪花园','2300','120.749961,30.79548','203');xiaoqu[20211] = new Array(1,'赞成丽景苑','2500','','202');xiaoqu[20214] = new Array(7,'万科金域缇香','2700','120.697159,30.791331','203');xiaoqu[20232] = new Array(1,'华光大厦','6000','','205');xiaoqu[20236] = new Array(1,'禾兴南路','800','','202');xiaoqu[20244] = new Array(19,'恒创·春晓源','3024','','203');xiaoqu[20245] = new Array(2,'财富广场','5400','120.723429,30.765187','205');xiaoqu[20246] = new Array(2,'百绿公寓','1825','120.746354,30.787022','202');xiaoqu[20249] = new Array(1,'丽丰新天地','2500','','203');xiaoqu[20251] = new Array(4,'明日明园','3050','120.706721,30.760982','203');xiaoqu[20252] = new Array(1,'禾源新都北区','1500','120.729179,30.709928','208');xiaoqu[20253] = new Array(4,'和立馨庭','2775','120.71349,30.765101','203');xiaoqu[20255] = new Array(1,'杨光广场','1100','','202');xiaoqu[20256] = new Array(1,'嘉州美都','800','','203');xiaoqu[20261] = new Array(1,'杭州港龙城','2000','','202');xiaoqu[20262] = new Array(6,'月星家居','1434','','203');xiaoqu[20267] = new Array(8,'江南巴比伦','2463','','202');xiaoqu[20270] = new Array(1,'丽苑小区','850','120.765865,30.816808','202');xiaoqu[20272] = new Array(1,'科技城软件园','0','','202');xiaoqu[20277] = new Array(1,'嘉诚绿都','1300','','202');xiaoqu[20283] = new Array(15,'中楠穆溪左岸','1686','120.746354,30.798485','203');xiaoqu[20297] = new Array(1,'五四文化广场','1600','','202');xiaoqu[20300] = new Array(3,'嘉兴花园','5100','120.696292,30.764516','203');xiaoqu[20301] = new Array(1,'外月河花园','800','','208');xiaoqu[20302] = new Array(1,'府忠埭（旭辉广场）','2366','','205');xiaoqu[20304] = new Array(5,'信远朗庭','704','120.734708,30.78798','203');xiaoqu[20309] = new Array(2,'四季香公寓','1600','','202');xiaoqu[20310] = new Array(1,'财富大厦','18500','','205');xiaoqu[20312] = new Array(1,'新中国际','1300','','203');xiaoqu[20314] = new Array(1,'同昌公寓','550','','202');xiaoqu[20315] = new Array(1,'嘉善','7083','','209');xiaoqu[20317] = new Array(1,'老蔬菜公司宿舍','1000','','202');xiaoqu[20320] = new Array(3,'丽丰·新天地','1767','120.759775,30.768038','202');xiaoqu[20321] = new Array(1,'万科·海上传奇','2600','120.741414,30.743354','208');xiaoqu[20323] = new Array(1,'嘉兴银行','7000','','202');xiaoqu[20326] = new Array(2,'洪仁苑','1125','','205');xiaoqu[20329] = new Array(1,'环球国际月星家居','1300','','203');xiaoqu[20331] = new Array(1,'江南摩尔香榭水岸','400','','203');xiaoqu[20334] = new Array(1,'七星经济技术产业园','1','','202');xiaoqu[20342] = new Array(5,'方舟园','1360','120.734034,30.771536','202');xiaoqu[20345] = new Array(2,'枫华园','1700','120.771709,30.790097','203');xiaoqu[20355] = new Array(1,'府南三期','2000','','202');xiaoqu[20356] = new Array(1,'恒创·春晓园','3000','120.712506,30.772355','203');xiaoqu[20365] = new Array(1,'百福公寓','1000','120.750972,30.764364','202');xiaoqu[20366] = new Array(8,'嘉州美都四期欢畅园','1688','','205');xiaoqu[20368] = new Array(1,'嘉富好第坊','1100','','202');xiaoqu[20370] = new Array(1,'城东公寓','950','120.770357,30.773223','201');xiaoqu[20374] = new Array(2,'二毛三村','875','','202');xiaoqu[20380] = new Array(1,'市政府宿舍','1200','','201');xiaoqu[20381] = new Array(1,'亚澳花苑','400','','202');xiaoqu[20393] = new Array(5,'佳园·圣淘沙','1580','','203');xiaoqu[20396] = new Array(1,'越秀春天','1600','120.740488,30.778436','201');xiaoqu[20399] = new Array(8,'泾水二期','2025','120.79489,30.76289','202');xiaoqu[20404] = new Array(7,'天城花园','1558','120.736212,30.775023','201');xiaoqu[20410] = new Array(4,'信达·翰林兰庭','1900','120.811742,30.754577','202');xiaoqu[20428] = new Array(1,'晨凯大厦','3000','120.721413,30.755167','205');xiaoqu[20449] = new Array(1,'华东分院宿舍','1000','120.736832,30.77462','201');xiaoqu[20454] = new Array(1,'新亚 香榭水岸','1500','120.706559,30.767584','203');xiaoqu[20456] = new Array(12,'盛世豪庭·香园','2640','120.702337,30.765497','203');xiaoqu[20466] = new Array(17,'桂苑小区','1463','120.78468,30.759605','202');xiaoqu[20470] = new Array(2,'绿地·美郡','1350','120.8277,30.749348','202');xiaoqu[20474] = new Array(1,'秀水兜','1200','120.757655,30.779107','201');xiaoqu[20481] = new Array(17,'栅堰小区','1186','120.74944,30.771102','201');xiaoqu[20483] = new Array(13,'阳光小区','1335','120.749265,30.795844','206');xiaoqu[20489] = new Array(2,'海派秀城','2050','120.723735,30.774046','201');xiaoqu[20497] = new Array(20,'亚厦·风和苑','2938','120.714523,30.762215','203');xiaoqu[20506] = new Array(20,'赞成·紫景雅苑','1640','120.770752,30.779836','201');xiaoqu[20508] = new Array(8,'国际电器城','1057',',','201');xiaoqu[20513] = new Array(1,'常睦公寓','2500','120.744472,30.742985','208');xiaoqu[20518] = new Array(1,'凤桥镇 新康路','1420',',','202');xiaoqu[20520] = new Array(7,'花园小区','1408','120.742231,30.778331','201');xiaoqu[20522] = new Array(2,'大成·春天里','2250','120.744823,30.764962','203');xiaoqu[20529] = new Array(10,' 清河东区','1160','120.752575,30.782027','201');xiaoqu[20532] = new Array(3,'大华·城市花园','2434','120.760952,30.741981','201');xiaoqu[20533] = new Array(11,'金都·九月洋房','2546','120.694311,30.760377','205');xiaoqu[20534] = new Array(1,'嘉丝联小区','1100','120.763566,30.78053','201');xiaoqu[20535] = new Array(2,'天天家苑','2400','120.746615,30.751315','201');xiaoqu[20538] = new Array(1,'五金宿舍','1600','120.749898,30.765439','201');xiaoqu[20540] = new Array(13,'凯旋公寓','1081','120.733544,30.768693','201');xiaoqu[20550] = new Array(3,'嘉禾·北京城','1017','120.759892,30.778797','201');xiaoqu[20568] = new Array(3,'御溪半岛','3067','120.563819,30.651177','201');xiaoqu[20581] = new Array(2,'天城·河岸人家','2250',',','203');xiaoqu[20589] = new Array(2,'龙威大厦','5834',',','201');xiaoqu[20595] = new Array(4,'月新家居','1550',',','201');xiaoqu[20596] = new Array(9,'嘉兴中润中心','2184',',','201');xiaoqu[20607] = new Array(5,'中港城新世纪公寓','1710',',','202');xiaoqu[20609] = new Array(4,'立达汇元','1600',',','201');xiaoqu[20611] = new Array(10,'罗马都市','2630',',','202');xiaoqu[20612] = new Array(50,'万达广场','2015',',','202');xiaoqu[20613] = new Array(16,'都市先峰','1516',',','201');xiaoqu[20614] = new Array(12,'盛大晶座','1530',',','201');xiaoqu[20624] = new Array(3,'紫竹名苑','2434',',','202');xiaoqu[20627] = new Array(3,'电器城','967',',','202');xiaoqu[20628] = new Array(23,'绿地新都会','1655',',','202');xiaoqu[20629] = new Array(5,'石堰小区二期','860',',','207');xiaoqu[20630] = new Array(5,'双溪花园二期','1500',',','202');xiaoqu[20631] = new Array(1,'嘉城绿都芙蓉苑','1000',',','209');xiaoqu[20634] = new Array(1,'万达广场单身公寓','1200',',','202');xiaoqu[20635] = new Array(8,'金都夏宫','2338',',','202');xiaoqu[20636] = new Array(1,'绿溪 玫瑰园','1800',',','201');xiaoqu[20638] = new Array(1,'元一柏庄新界','1950',',','204');xiaoqu[20639] = new Array(6,'少年路','825',',','201');xiaoqu[20640] = new Array(3,'勤俭路','15500',',','201');xiaoqu[20641] = new Array(4,'安乐路','1213',',','201');xiaoqu[20642] = new Array(1,'火车站边','800',',','201');xiaoqu[20644] = new Array(1,'佳园区','950',',','201');xiaoqu[20645] = new Array(3,'中山大厦商务楼','2267',',','205');xiaoqu[20647] = new Array(1,'秀州·咖尔花园','950',',','203');xiaoqu[20652] = new Array(1,'新篁镇','3333',',','202');xiaoqu[20653] = new Array(1,'恒隆商业广场','1500',',','203');xiaoqu[20662] = new Array(1,'元一柏庄一期','1750',',','203');xiaoqu[20670] = new Array(2,'中山名都','6100',',','202');xiaoqu[20677] = new Array(1,'餐饮铺','12250',',','202');xiaoqu[20680] = new Array(5,'国际·中港城新世纪公','1500',',','202');xiaoqu[20683] = new Array(1,'吉水路188弄','1200',',','201');xiaoqu[20684] = new Array(1,'绝缘厂小区 ','750',',','201');xiaoqu[20690] = new Array(4,'文贤小区','800',',','207');xiaoqu[20702] = new Array(1,'嘉城绿都春兰苑','1850',',','209');xiaoqu[20705] = new Array(2,'绿景华庭','2600',',','202');xiaoqu[20707] = new Array(1,'普罗旺斯','1000',',','202');xiaoqu[20709] = new Array(2,'同方燕语林苑','1500',',','202');xiaoqu[20713] = new Array(1,'中伟大厦','1350',',','201');xiaoqu[20714] = new Array(1,'御上江南','1400',',','202');xiaoqu[20716] = new Array(2,'探花苑','2225',',','202');xiaoqu[20717] = new Array(3,'澳洲花园','2667',',','202');xiaoqu[20719] = new Array(1,'晴湾佳苑','4000',',','202');xiaoqu[20737] = new Array(1,'东升城北路口','800',',','201');xiaoqu[20738] = new Array(1,'颐高广场办公房','2500',',','201');xiaoqu[20747] = new Array(1,'清河小区','880',',','201');xiaoqu[20751] = new Array(1,'精严寺街','1100',',','201');xiaoqu[20759] = new Array(1,'安乐路老','1700',',','201');xiaoqu[20762] = new Array(2,'斜西街','925',',','202');xiaoqu[20777] = new Array(4,'旭辉·朗香郡','1988','120.694791,30.756994','203');xiaoqu[20785] = new Array(1,'天作坊','2000',',','201');xiaoqu[20788] = new Array(1,'杨柳湾路','1200',',','202');xiaoqu[20795] = new Array(1,'学仕苑','2000',',','202');xiaoqu[20797] = new Array(1,'嘉富好地方','1200',',','202');xiaoqu[20798] = new Array(1,'元一柏庄二期','3300',',','203');xiaoqu[20799] = new Array(1,'新塍旺铺出租','1800',',','201');xiaoqu[20804] = new Array(1,'梅湾街水廊下','1800',',','202');xiaoqu[20809] = new Array(3,'东方普罗旺斯','1967',',','202');xiaoqu[20825] = new Array(2,'府南二期','1050',',','201');xiaoqu[20827] = new Array(2,'禾兴北路','26650',',','203');xiaoqu[20828] = new Array(1,'瑞鑫大厦','12000',',','202');xiaoqu[20832] = new Array(1,'富悦水晶','7200',',','201');xiaoqu[20848] = new Array(2,'友谊街','1450',',','205');xiaoqu[20849] = new Array(1,'世界贸易中心','12705',',','202');xiaoqu[20851] = new Array(1,'新濮小区','2300',',','201');xiaoqu[20852] = new Array(1,'世贸中心','12000',',','202');xiaoqu[20853] = new Array(1,'凯旋路','1150',',','201');xiaoqu[20856] = new Array(1,'濮院新濮小区','2300',',','205');xiaoqu[20859] = new Array(4,'长新公寓四期','888',',','208');xiaoqu[20868] = new Array(1,'嘉兴三水湾','1',',','202');xiaoqu[20871] = new Array(1,'中山东路','800',',','201');xiaoqu[20877] = new Array(1,'翠湖一号','1300',',','202');xiaoqu[20884] = new Array(1,'万科海上传奇','3500',',','208');xiaoqu[20886] = new Array(1,'西马桥小区','1350',',','201');xiaoqu[20887] = new Array(2,'石堰小区','950',',','207');xiaoqu[20890] = new Array(2,'宏润花园','2000',',','202');xiaoqu[20909] = new Array(14,'宝格丽公馆','2343','120.805606,30.739676','207');xiaoqu[20924] = new Array(2,'好地方','1200',',','203');xiaoqu[20927] = new Array(1,'00','600',',','201');xiaoqu[20928] = new Array(1,'富润路仓库','7800',',','202');xiaoqu[20929] = new Array(1,'茶香坊旁仓库','100',',','209');xiaoqu[20936] = new Array(10,'香榭水岸','1405',',','203');xiaoqu[20940] = new Array(2,'紫金艺境','2500',',','202');xiaoqu[20953] = new Array(1,'财税宿舍','2000',',','201');xiaoqu[20957] = new Array(2,'南湖区三水湾店面','3000',',','202');xiaoqu[20967] = new Array(2,'大树花园三期','1800',',','203');xiaoqu[20975] = new Array(1,'翰林兰庭','800',',','202');xiaoqu[20979] = new Array(1,'中禾大厦','5500',',','201');xiaoqu[20993] = new Array(1,'嘉城绿都紫薇苑','1800',',','209');xiaoqu[21005] = new Array(1,'三水湾店面','3000',',','202');xiaoqu[21010] = new Array(1,'解放路','1200',',','201');xiaoqu[21011] = new Array(1,'且客酒店','1000',',','201');xiaoqu[21013] = new Array(1,'万达春江单身公寓','1650',',','202');xiaoqu[21015] = new Array(7,'万达单身公寓','1650',',','202');xiaoqu[21022] = new Array(1,'电气城','1000',',','202');xiaoqu[21026] = new Array(1,'府南一期','1600',',','202');xiaoqu[21039] = new Array(2,'百汇大厦·星雅汇','1550',',','208');xiaoqu[21044] = new Array(4,'大树金湾港','1050',',','208');xiaoqu[21045] = new Array(3,'府南二区','2200',',','202');xiaoqu[21056] = new Array(1,'佳源东方都市','1500',',','202');xiaoqu[21064] = new Array(1,'加丝联宿舍','650',',','201');xiaoqu[21076] = new Array(1,'晨凯红树湾','1300',',','202');xiaoqu[21082] = new Array(1,'烟雨小区','2000',',','201');xiaoqu[21089] = new Array(6,'晴湾','2684','120.724382,30.751532','204');xiaoqu[21094] = new Array(2,'九龙山星海湾','2500',',','202');xiaoqu[21096] = new Array(3,'星雅汇','16534',',','208');xiaoqu[21097] = new Array(4,'蒋家村','2000',',','208');xiaoqu[21102] = new Array(2,'紫元商园','1800',',','208');xiaoqu[21124] = new Array(2,'新世纪公寓','2200',',','202');xiaoqu[21126] = new Array(1,'艺墅家花园','1300',',','203');xiaoqu[21142] = new Array(1,'世纪嘉园','3500',',','205');xiaoqu[21144] = new Array(1,'城西大润发','12500',',','205');xiaoqu[21146] = new Array(2,'紫元尚园','2600',',','208');xiaoqu[21150] = new Array(4,'中禾国际','8018',',','203');xiaoqu[21151] = new Array(1,'写字楼','1500',',','203');xiaoqu[21152] = new Array(1,'南湖商会大厦','13000',',','202');xiaoqu[21153] = new Array(1,'丽晶广场','15000',',','203');xiaoqu[21166] = new Array(1,'信源电气城','850',',','202');xiaoqu[21179] = new Array(1,'赞成学士苑','1350',',','202');xiaoqu[21225] = new Array(1,'竹林集镇竹溪路3号','12000',',','202');xiaoqu[21323] = new Array(1,'东升路','900',',','206');xiaoqu[21387] = new Array(4,'烟雨苑','1850',',','202');xiaoqu[21391] = new Array(1,'富园小区','800',',','203');xiaoqu[21413] = new Array(1,'梁林凡影庄','2500',',','207');xiaoqu[21429] = new Array(1,'新丰镇北小区','700',',','202');xiaoqu[21431] = new Array(1,'万达春江中心','1700',',','202');xiaoqu[21437] = new Array(1,'友谊街科技馆边上店面','1000',',','203');xiaoqu[21470] = new Array(1,'嘉兴学院越秀旺铺急转','9600',',','201');xiaoqu[21471] = new Array(1,'明月小区','1000',',','201');xiaoqu[21479] = new Array(1,'秀洲商会大厦','25',',','203');xiaoqu[21486] = new Array(2,'万事达大厦','1328',',','203');xiaoqu[21504] = new Array(1,'信源电器城','1000',',','206');xiaoqu[21511] = new Array(1,'环北商贸城','3300',',','203');xiaoqu[21512] = new Array(1,'金桥假日丽厦','1100',',','201');xiaoqu[21514] = new Array(1,'东方.普罗旺斯','1200',',','207');xiaoqu[21533] = new Array(1,'嘉兴市区','20000',',','202');xiaoqu[21539] = new Array(1,'巨匠.义圣名苑','2500',',','201');xiaoqu[21562] = new Array(3,'秀州咖尔花园','600',',','203');xiaoqu[21565] = new Array(1,'卫生局宿舍','1600',',','203');xiaoqu[21570] = new Array(1,'市中心小高层单身公寓','1500',',','202');xiaoqu[21578] = new Array(1,'勤俭路人民公园北','900',',','201');xiaoqu[21581] = new Array(1,'台昇悦府','800',',','202');xiaoqu[21583] = new Array(1,'设计院宿舍','1200',',','202');xiaoqu[21586] = new Array(1,'凯旋路友谊公寓','1600',',','203');xiaoqu[21591] = new Array(1,'公交宿舍','1500',',','202');xiaoqu[21595] = new Array(1,'越秀南路-文秀里','1200',',','202');xiaoqu[21596] = new Array(1,'秀洲江南摩尔','1400',',','203');xiaoqu[21605] = new Array(1,'洪仁路','800',',','203');xiaoqu[21609] = new Array(1,'浙江嘉兴文贤路文贤苑','1000',',','202');xiaoqu[21610] = new Array(1,'世贸尚景蓝湾','2000',',','202');xiaoqu[21611] = new Array(1,'景湖花园东区','2200',',','202');xiaoqu[21615] = new Array(1,'宝格丽公馆商铺','384300',',','202');xiaoqu[21631] = new Array(1,'台升怡府','2000',',','202');xiaoqu[21645] = new Array(1,'探花苑8-506','1800',',','202');xiaoqu[21649] = new Array(1,'嘉兴国际中港城新世纪','1400',',','202');xiaoqu[21650] = new Array(2,'塘汇路','45000',',','202');xiaoqu[21652] = new Array(1,'同方2008燕雨林苑','1200',',','202');xiaoqu[21735] = new Array(1,'中港城新世纪单身公寓','1300',',','202');xiaoqu[21736] = new Array(1,'虹桥新村','1600',',','202');	var qus = new Array();qus['中心城区'] = 201;qus['南湖新区'] = 202;qus['秀洲新区'] = 203;qus['城西区'] = 205;qus['城北区'] = 206;qus['西南区'] = 204;qus['国际商务区'] = 207;qus['城南区'] = 208;qus['湘家荡'] = 209;	var qus2 = new Array();qus2[201] = '中心城区';qus2[202] = '南湖新区';qus2[203] = '秀洲新区';qus2[205] = '城西区';qus2[206] = '城北区';qus2[204] = '西南区';qus2[207] = '国际商务区';qus2[208] = '城南区';qus2[209] = '湘家荡';
+	// 百度地图API功能
+	var mp = new BMap.Map("map_canvas");
+	mp.centerAndZoom(new BMap.Point(120.765602,30.762573), 14);
+	mp.enableScrollWheelZoom();
+	mp.setMinZoom(13);
+
+	//区块样式
+    function ComplexCustomOverlay(point, text, mouseoverText, index){
+      this._point = point;
+      this._text = text;
+      this._overText = mouseoverText;
+	  this._index = index;
+    }
+    ComplexCustomOverlay.prototype = new BMap.Overlay();
+    ComplexCustomOverlay.prototype.initialize = function(map){
+      this._map = map;
+      var div = this._div = document.createElement("div");
+	  
+      div.style.position = "absolute";
+      div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+      div.style.background = "url(345_files/mark32-1.png) no-repeat scroll -92px -92px rgba(0, 0, 0, 0)";
+	  div.style.cursor = "pointer";
+	  div.style.width = "74px";
+	  div.style.height = "40px";
+	  div.style.padding = "20px 0 14px";
+      div.style.color = "white";
+      div.style.fontSize = "14px";
+	  div.style.textAlign = "center";
+	  div.className = "areas";      
+
+      var span = document.createElement("span");
+	  span.style.display = "block";
+	  span.style.fontWeight = "700";
+      div.appendChild(span);
+      span.appendChild(document.createTextNode(this._text));      
+	  
+      var span = document.createElement("span");
+	  span.style.display = "block";
+	  span.style.fontSize = "12px";
+	  span.style.height = "22px";
+	  span.style.lineHeight = "22px";
+      div.appendChild(span);
+      span.appendChild(document.createTextNode(this._overText)); 
+	  
+	  var index = this._index;
+
+      div.onmouseover = function(){
+		 div.style.background = "url(345_files/mark32-1.png) no-repeat scroll 0px -92px rgba(0, 0, 0, 0)";
+      }
+
+      div.onmouseout = function(){
+		 div.style.background = "url(345_files/mark32-1.png) no-repeat scroll -92px -92px rgba(0, 0, 0, 0)";
+      }
+	  
+	  var currarea = this._text;
+	  //点击区块，进入楼盘(地图放大及定位)
+	  div.onclick = function() {
+		 var _str = $('#areaStr').val();
+		 var _m = _str.split(',');
+		 var _t = true;
+		 for(var i=0;i<_m.length;i++) {
+			if(_m[i]==currarea) {
+				_t = false;
+			}
+		 }
+		 if(_t == true) {
+			$('#areaStr').attr('value', _str+(_str=='' ? '' : ',')+currarea);
+		 }
+		 
+		 loadData();
+
+		 var m = area[index].split('|');
+		 var s = m[0].split(',');
+		 s[0] = parseFloat(s[0]);
+		 s[1] = parseFloat(s[1]);
+		 mp.centerAndZoom(new BMap.Point(s[0],s[1]), 15);
+	  }
+
+      mp.getPanes().labelPane.appendChild(div);
+      
+      return div;
+    }
+    ComplexCustomOverlay.prototype.draw = function(){
+      var map = this._map;
+      var pixel = map.pointToOverlayPixel(this._point);
+      this._div.style.left = pixel.x + "px";
+      this._div.style.top  = pixel.y - 15 + "px";
+    }
+	
+	//展示区块
+	for(i=0;i<area.length;i++) {
+		var m = area[i].split('|');
+		var s = m[0].split(',');
+		s[0] = parseFloat(s[0]);
+		s[1] = parseFloat(s[1]);
+		var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(s[0],s[1]), m[1], m[2], i);
+		mp.addOverlay(myCompOverlay);
+	}
+	
+	//楼盘样式
+    function ComplexCustomOverlay2(point, text, mouseoverText, id, dq){
+      this._point = point;
+      this._text = text;
+      this._overText = mouseoverText;
+	  this._id = id;
+	  this._dq = dq;
+    }
+    ComplexCustomOverlay2.prototype = new BMap.Overlay();
+    ComplexCustomOverlay2.prototype.initialize = function(map){
+      this._map = map;
+      var div = this._div = document.createElement("div");
+      div.style.position = "absolute";
+      div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+      div.style.backgroundColor = "#EE5D5B";
+      div.style.border = "0px solid #BC3B3A";
+      div.style.color = "white";
+      div.style.height = "18px";
+      div.style.padding = "2px";
+      div.style.lineHeight = "18px";
+      div.style.whiteSpace = "nowrap";
+      div.style.MozUserSelect = "none";
+      div.style.fontSize = "12px";
+	  div.style.borderRadius = "3px";
+	  div.style.paddingLeft = "5px";
+	  div.style.paddingRight = "5px";
+	  
+	  if(this._dq > 0) {
+		div.className = "loupan listlp list"+this._dq+" loupan"+this._id;
+	  } else {
+		div.className = "loupan loupan"+this._id;
+	  }
+	  /*
+	  if(this._dq == '湘家荡度假区') {
+		div.className = "loupan xjd loupan"+this._id;
+	  } else if(this._dq == '城北区') {
+		div.className = "loupan cb loupan"+this._id;
+	  } else if(this._dq == '城西区') {
+		div.className = "loupan cx loupan"+this._id;
+	  } else if(this._dq == '秀洲新区') {
+		div.className = "loupan xz loupan"+this._id;
+	  } else if(this._dq == '西南区') {
+		div.className = "loupan xn loupan"+this._id;
+	  } else if(this._dq == '南湖区') {
+		div.className = "loupan nh loupan"+this._id;
+	  } else if(this._dq == '国际商务区') {
+		div.className = "loupan gjsm loupan"+this._id;
+	  } else if(this._dq == '城南区') {
+		div.className = "loupan cn loupan"+this._id;
+	  } else {
+		div.className = "loupan loupan"+this._id;
+	  }
+	  */
+      var span = this._span = document.createElement("span");
+      div.appendChild(span);
+      span.appendChild(document.createTextNode(this._text));      
+      var that = this;
+
+      var arrow = this._arrow = document.createElement("div");
+      arrow.style.background = "url(/statics/images/map/label.png) no-repeat";
+      arrow.style.position = "absolute";
+      arrow.style.width = "11px";
+      arrow.style.height = "10px";
+      arrow.style.top = "22px";
+      arrow.style.left = "10px";
+      arrow.style.overflow = "hidden";
+      div.appendChild(arrow);
+      
+	  var id = this._id;
+
+      div.onmouseover = function(){
+        this.style.backgroundColor = "#6caeca";
+        this.style.borderColor = "#0b3e08";
+        this.getElementsByTagName("span")[0].innerHTML = that._overText;
+        arrow.style.backgroundPosition = "0px -20px";
+      }
+	  
+      div.onmouseout = function(){
+        this.style.backgroundColor = "#EE5D5B";
+        this.style.borderColor = "#BC3B3A";
+        this.getElementsByTagName("span")[0].innerHTML = that._text;
+        arrow.style.backgroundPosition = "0px 0px";
+      }
+	  
+	  //楼盘数据加载
+	  div.onclick = function() {
+		listFang(id);
+	  }
+
+      mp.getPanes().labelPane.appendChild(div);
+      return div;
+    }
+    ComplexCustomOverlay2.prototype.draw = function(){
+      var map = this._map;
+      var pixel = map.pointToOverlayPixel(this._point);
+      this._div.style.left = pixel.x - parseInt(this._arrow.style.left) + "px";
+      this._div.style.top  = pixel.y - 30 + "px";
+    }
+        
+
+	//调整地图大小
+	_resize();
+	
+	//滚动鼠标(隐藏区块，显示楼盘)
+	mp.addEventListener("zoomend",function(){
+		if(mp.getZoom() == 14) {
+			$('.areas').show();
+			$('.loupan').hide();
+			$('#area10_1').hide();
+		} else if(mp.getZoom() >14) {
+			$('.areas').hide();
+			$('.loupan').show();
+			$('#area10_1').show();
+
+			for(var obj in xiaoqu) {
+				var point = xiaoqu[obj][3];
+				var ms = point.split(',');
+				ms[0] = parseFloat(ms[0]);
+				ms[1] = parseFloat(ms[1]);
+				var myCompOverlay2 = new ComplexCustomOverlay2(new BMap.Point(ms[0],ms[1]), xiaoqu[obj][1]+"("+xiaoqu[obj][0]+"套)", xiaoqu[obj][1]+'('+xiaoqu[obj][2]+'元/平)', obj, xiaoqu[obj][4]);
+				mp.addOverlay(myCompOverlay2);
+			}
+			
+			proArea(false);
+		}
+	});
+
+	function checkAll() {
+		$("table :checkbox").attr('checked', true);
+		$('#areaStr').val('');
+		proArea(true);
+	}
+
+	function listAreaw(obj) {
+		var p = 0,str = '';
+		for(var i=0;i<$("table :checkbox").length;i++) {
+			if($("table :checkbox").eq(i).attr('checked')===true && $("table :checkbox").eq(i).attr('value')!="") {
+				p++;
+				str = str+(str=='' ? '' : ',')+$("table :checkbox").eq(i).attr('value');
+			}
+		}
+
+		if(($("table :checkbox").length-1) == p) {
+			str = '';
+			$('#colorChk0').attr('checked', true);
+		}
+
+		$('#areaStr').val(str);
+		proArea(true);
+	}
+	
+	//控制楼盘显示
+	function proArea(list) {
+		var _str = $('#areaStr').val();
+		if(list === true) {
+			loadData();
+		}
+		if(_str == '') {
+			/*
+			$('.xjd').show();
+			$('.cb').show();
+			$('.cx').show();
+			$('.xz').show();
+			$('.xn').show();
+			$('.nh').show();
+			$('.gjsm').show();
+			$('.cn').show();
+			*/
+			$('.listlp').show();
+			$("table :checkbox").attr('checked', true);
+		} else {
+			var ss = _str.split(',');
+			/*
+			$('.xjd').hide();
+			$('.cb').hide();
+			$('.cx').hide();
+			$('.xz').hide();
+			$('.xn').hide();
+			$('.nh').hide();
+			$('.gjsm').hide();
+			$('.cn').hide();
+			*/
+			$('.listlp').hide();
+			$("table :checkbox").attr('checked', false);
+			for(var i=0;i<ss.length;i++) {
+				$('.list'+qus[ss[i]]).show();
+				$('#colorChk'+qus[ss[i]]).attr('checked', true);
+				/*
+				if(ss[i] == '湘家荡度假区') {
+					$('.xjd').show();
+					$('#colorChk1').attr('checked', true);
+				} else if(ss[i] == '城北区') {
+					$('.cb').show();
+					$('#colorChk2').attr('checked', true);
+				} else if(ss[i] == '城西区') {
+					$('.cx').show();
+					$('#colorChk3').attr('checked', true);
+				} else if(ss[i] == '秀洲新区') {
+					$('.xz').show();
+					$('#colorChk4').attr('checked', true);
+				} else if(ss[i] == '西南区') {
+					$('.xn').show();
+					$('#colorChk5').attr('checked', true);
+				} else if(ss[i] == '南湖区') {
+					$('.nh').show();
+					$('#colorChk6').attr('checked', true);
+				} else if(ss[i] == '国际商务区') {
+					$('.gjsm').show();
+					$('#colorChk8').attr('checked', true);
+				} else if(ss[i] == '城南区') {
+					$('.cn').show();
+					$('#colorChk7').attr('checked', true);
+				}
+				*/
+			}
+		}
+	}
+	
+	//所在二手楼盘参数
+	var page = 1;
+	
+	//楼盘房源
+	var curr_id = 0;
+	var cpage = 1;
+	
+	function loadData() {
+		$('#listact').val('loupan');
+		var district = $('#areaStr').val();
+		if(district != '') {
+			var _tmp,_str = '';
+			_tem = district.split(',');
+			for(i=0;i<_tem.length;i++) {
+				_str = (_str ? _str+',' : _str) + (qus[_tem[i]]).toString();
+				
+			}
+			district = _str;
+		}
+		$.post('/api.php?m=Mapajax&action=map&a=getarearendhouse', {district:district,page:page}, function(datas){
+			page = datas.page
+			$('#mapCountTip').html('&nbsp;共找到'+datas.cts+'个租房所在楼盘!');
+			$('#map_Tips_Page_Mid').html('第'+page+'/'+datas.pagects+'页');
+			var str = '';
+			var data = datas.data;
+			for(var obj in data) {
+				var s;
+				if(data[obj]['point'] != null) {
+					s = data[obj]['point'].split(',');
+					s[0] = parseFloat(s[0]);
+					s[1] = parseFloat(s[1]);
+					str = str + '<div class="area10_11" onclick="mp.centerAndZoom(new BMap.Point('+s[0]+','+s[1]+'), 15);" onmouseover="$(\'.loupan'+data[obj]['village_id']+'\').css(\'background-color\',\'#2b9225\');this.style.background=\'white\'" onmouseout="$(\'.loupan'+data[obj]['village_id']+'\').css(\'background-color\',\'#EE5D5B\');this.style.background=\'#FAFAFA\'" ><span class="hei33 bold">'+data[obj]['village']+'</span>【'+data[obj]['cts']+'套】&nbsp;[<a href="javascript:;" onclick="listFang('+data[obj]['village_id']+');" class="lan">详情</a>]<br> 所在区域：'+qus2[data[obj]['district']]+'<br>均价：'+data[obj]['price_per']+'元/m²<br>建设年份：'+data[obj]['buildat']+'</div>';
+				} else {
+					str = str + '<div class="area10_11" onmouseover="$(\'.loupan'+data[obj]['village_id']+'\').css(\'background-color\',\'#2b9225\');this.style.background=\'white\'" onmouseout="$(\'.loupan'+data[obj]['village_id']+'\').css(\'background-color\',\'#EE5D5B\');this.style.background=\'#FAFAFA\'" ><span class="hei33 bold">'+data[obj]['village']+'</span>【'+data[obj]['cts']+'套】&nbsp;[<a href="javascript:;" onclick="listFang('+data[obj]['village_id']+');" class="lan">详情</a>]<br> 所在区域：'+qus2[data[obj]['district']]+'<br>均价：'+data[obj]['price_per']+'元/m²<br>建设年份：'+data[obj]['buildat']+'</div>';
+				}
+			}
+			$('#map_Tips').html(str);
+		}, 'json');
+	}
+
+	function preData() {
+		if($('#listact').val() == 'loupan') {
+			if(page > 1) {
+				page--;
+				loadData();
+			}
+		} else {
+			cpage--;
+			listFang(curr_id);
+		}
+	}
+
+	function nextData() {
+		if($('#listact').val() == 'loupan') {
+			page++;
+			loadData();
+		} else {
+			cpage++;
+			listFang(curr_id);
+		}
+	}
+	
+	function listFang(id) {
+		$('#listact').val('fang');
+		curr_id = id;
+		
+		$.post('/api.php?m=Mapajax&action=map&a=gethouserent',{id:id,page:cpage},function(data){
+			var _cts = data.data.length;
+			cpage = data.page;
+			if(_cts > 0) {
+				$('#mapCountTip').html('【'+data.name+'】共有'+data.cts+'个房源!&nbsp;<a href="javascript:loadData();"><span color="#ff0000">返回楼盘</span></a>');
+				$('#map_Tips_Page_Mid').html('第'+cpage+'/'+data.pagects+'页');
+				var str = '';
+				for(var i=0;i<_cts;i++) {
+					str = str + '<div class="area10_11" onmouseover="$(\'.loupan'+data.data[i]['village_id']+'\').css(\'background-color\',\'#2b9225\');this.style.background=\'white\'" onmouseout="$(\'.loupan'+data.data[i]['village_id']+'\').css(\'background-color\',\'#EE5D5B\');this.style.background=\'#FAFAFA\'" ><span class="hei33 bold">'+data.data[i]['title']+'</span>&nbsp;[<a href="/rent/'+data.data[i]['id']+'.html" target="_blank" class="lan">详情</a>]<br> 物业类型：'+data.data[i]['type']+'<br>房型：'+data.data[i]['structure_1']+'室'+data.data[i]['structure_2']+'厅'+data.data[i]['structure_3']+'卫<br>面积：'+data.data[i]['size']+'m²<br>价格：'+data.data[i]['price']+'元</div>';
+				}
+				
+				$('#map_Tips').html(str);
+			}
+		},'json');
+	}
+
+	loadData();
+</script>
+
+
+
+</body></html>

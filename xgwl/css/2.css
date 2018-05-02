@@ -1,0 +1,141 @@
+.navwz {
+    height: 50px;
+    line-height: 50px;
+    color: #E30613;
+    margin-top: 110px;
+}
+
+.navwz a {
+    color: #000000;
+}
+
+.navwz a:hover {
+    color: #bf0000;
+}
+
+.ed2 {
+    text-align: center;
+}
+
+.ed2 img {
+    width: 1170px;
+}
+
+.nav2 {
+    height: 50px;
+    margin-top: 40px;
+    width: 100%;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.nav2 a {
+    float: left;
+    margin-right: 50px;
+    font-size: 18px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color:#333;
+}
+
+.nav2 a:hover {
+    color: #bf0000;
+}
+
+.nav2 a.on {
+    border-bottom: 5px #bf0000 solid;
+    color: #bf0000;
+}
+
+.nbtn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size;
+    15px;
+    color: #fff;
+    background: #DC0D13;
+    border-radius: 5px;
+    display: block;
+    float: right;
+    margin-top: 90px;
+    margin-right: 35px;
+}
+
+.nbtn:hover {
+    color: #fff;
+    background: #bf0000;
+}
+
+.news {
+    margin-bottom: 80px;
+}
+
+.news li {
+    height: 240px;
+    display: block;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.news li img {
+    float: left;
+    margin-top: 25px;
+
+}
+
+.ninfo {
+    width: 550px;
+    float: left;
+    margin-left: 20px;
+}
+
+.ntxt {
+    width: 550px;
+    float: left;
+}
+
+.ninfo .ntime {
+    margin-top: 35px;
+    display: block;
+    color: #D12B28;
+}
+
+.ninfo .ntit {
+    margin-top: 15px;
+    display: block;
+    font-size: 24px;
+    color:#333;
+}
+.ninfo .ntit:hover{color:#ff0000;}
+
+.ninfo .ntxt {
+    line-height: 200%;
+}
+.my-navbar{background:#fff;}
+.leavetop.my-navbar{background:#fff;}
+
+/***********************/
+.carousel-inner .item {}
+.carousel-inner .item .info{position:absolute;bottom:30px;color:#fff;left:40px;z-index:2;text-align:left;}
+.carousel-indicators{bottom:10px;}
+@media (min-width: 768px) {
+ .my-navbar .navbar-nav li a{color:#333 !important;}
+ .news li img{width: 258px;height: 190px;}
+}
+@media (max-width: 768px) {
+ .my-navbar .navbar-nav li a{color:#fff !important;}
+ .navwz{margin-top:80px;}
+ .nav2 a{margin-right:12px;font-size:14px;}
+ .nav2{margin-top:10px;}
+ .news li img{width:100%;}
+ .ninfo{margin-left:0;width:100%;}
+ .ninfo .ntxt{width:100%;}
+ .nbtn{display:none;}
+ .ninfo .ntit{font-size:17px;}
+ .news li{border:0;}
+ .ninfo .ntime{margin-top:20px;}
+ /* 详情页 */
+ .w,wl2{width:100%;}
+  h1, .h1{font-size:20px !important;}
+}

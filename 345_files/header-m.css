@@ -1,0 +1,183 @@
+input {
+	font-size: 12px;
+}
+select {
+	font-size: 12px;
+}
+#header #area1 {
+	height: 28px; border-right-color: rgb(219, 219, 219); border-bottom-color: rgb(219, 219, 219); border-left-color: rgb(219, 219, 219); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; background-image: url("../images/top1.gif"); background-repeat: repeat-x;
+}
+#header #area1_l {
+	height: 28px; color: rgb(0, 0, 0); line-height: 28px; font-size: 12px; margin-left: 10px; float: left;
+}
+#header #area1_l a {
+	color: rgb(51, 102, 204);
+}
+#header #area1_l span {
+	color: rgb(204, 204, 204);
+}
+#header #userLogin {
+	height: 27px; color: rgb(0, 0, 0); line-height: 27px; font-size: 12px; margin-left: 10px; float: left;
+}
+#header #userLogin a {
+	color: rgb(51, 102, 204);
+}
+#header #userLogin span {
+	color: rgb(204, 204, 204);
+}
+#header #area1_r {
+	height: 14px; line-height: 14px; font-size: 14px; margin-top: 7px; margin-right: 10px; float: right;
+}
+#header #area1_r2 {
+	height: 14px; line-height: 14px; font-size: 14px; margin-top: 7px; margin-right: 10px; float: left;
+}
+#header #area1_r ul {
+	list-style: none; margin: 0px;
+}
+#area1_r ul li.a1_1 {
+	padding: 0px 5px; height: 16px; text-align: center; vertical-align: middle; border-right-color: rgb(171, 171, 171); border-right-width: 1px; border-right-style: solid; float: left;
+}
+#area1_r ul li.a1_2 {
+	padding: 0px 5px; height: 14px; text-align: center; vertical-align: middle; float: left;
+}
+#header #area2 {
+	height: 85px;
+}
+#header #area2_1 {
+	height: 55px; clear: both;
+}
+#header #area2_l1 {
+	background-position: bottom; width: 2px; height: 55px; float: left; background-image: url("../images/menu_j1.gif"); background-repeat: no-repeat;
+}
+#header #area2_m1 {
+	background-position: bottom; width: 906px; height: 55px; float: left; background-image: url("../images/menu_b_t.gif"); background-repeat: repeat-x;
+}
+#header #area2_m11 {
+	float: left;
+}
+#header #area2_m12 {
+	margin-left: 6px; float: left;
+}
+#header #qhcs1 {
+	width: 71px; height: 30px; background-image: url("../images/qhcs_bg.gif");
+}
+#header #qhcs2 {
+	width: 71px; height: 20px; text-align: center; color: rgb(146, 146, 146); line-height: 20px; font-size: 12px;
+}
+#header #qhcs3 {
+	width: 71px; height: 24px; text-align: center; color: rgb(0, 90, 137); line-height: 24px; font-size: 14px; font-weight: bold;
+}
+#header .qhcs5 {
+	padding: 10px; border: 1px solid rgb(198, 198, 198); width: 220px; height: 120px; background-color: rgb(255, 255, 255);
+}
+#header #apDiv1 {
+	width: 240px; height: 140px; margin-left: 30px; position: absolute; z-index: 1;
+}
+#header #area2_m13 {
+	padding-top: 2px; padding-bottom: 2px; padding-left: 13px; margin-top: 8px; float: left;
+}
+#header #area2_m14 {
+	margin: 27px 0px 0px; height: 28px; float: right;
+}
+#header #area2_m14 ul {
+	list-style: none; margin: 0px; padding: 0px; height: 28px;
+}
+#header #area2_m14 ul li.area21 {
+	width: 101px; height: 28px; text-align: center; color: rgb(255, 255, 255); line-height: 28px; font-size: 14px; font-weight: bold; margin-right: 3px; float: right; background-image: url("../images/home1.gif");
+}
+#header #area2_m14 ul li.area21 a:link {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area21 a:visited {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area21 a:hover {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: underline;
+}
+#header #area2_m14 ul li.area21 a:active {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area22 {
+	width: 101px; height: 28px; text-align: center; color: rgb(0, 0, 0); line-height: 28px; font-size: 14px; font-weight: bold; margin-right: 3px; float: right; background-image: url("../images/home2.gif");
+}
+#header #area2_m14 ul li.area22 a:link {
+	color: rgb(0, 90, 137); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area22 a:visited {
+	color: rgb(0, 90, 137); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area22 a:hover {
+	color: rgb(0, 90, 137); font-size: 14px; text-decoration: underline;
+}
+#header #area2_m14 ul li.area22 a:active {
+	color: rgb(51, 51, 51); font-size: 14px; text-decoration: none;
+}
+#header #area2_mm {
+	height: 60px; float: right;
+}
+#header #area2_mm #area2_mm_login {
+	margin: 0px 4px 0px 0px; padding: 0px; height: 27px; text-align: right; line-height: 27px;
+}
+#header #area2_mm #area2_mm_login #userLogin {
+	float: right;
+}
+#header #area2_mm .line {
+	margin: 0px; padding: 0px; height: 5px; line-height: 5px; font-size: 0px;
+}
+#header #area2_m14 ul li.area21m {
+	width: 70px; height: 28px; text-align: center; color: rgb(255, 255, 255); line-height: 28px; font-size: 14px; font-weight: bold; margin-right: 3px; float: right; background-image: url("../images/home1m.gif");
+}
+#header #area2_m14 ul li.area21m a:link {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area21m a:visited {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area21m a:hover {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: underline;
+}
+#header #area2_m14 ul li.area21m a:active {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area22m {
+	width: 70px; height: 28px; text-align: center; color: rgb(0, 0, 0); line-height: 28px; font-size: 14px; font-weight: bold; margin-right: 3px; float: right; background-image: url("../images/home2m.gif");
+}
+#header #area2_m14 ul li.area22m a:link {
+	color: rgb(0, 90, 137); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area22m a:visited {
+	color: rgb(0, 90, 137); font-size: 14px; text-decoration: none;
+}
+#header #area2_m14 ul li.area22m a:hover {
+	color: rgb(0, 90, 137); font-size: 14px; text-decoration: underline;
+}
+#header #area2_m14 ul li.area22m a:active {
+	color: rgb(51, 51, 51); font-size: 14px; text-decoration: none;
+}
+#header #area2_r1 {
+	background-position: bottom; width: 2px; height: 55px; float: left; background-image: url("../images/menu_j2.gif"); background-repeat: no-repeat;
+}
+#header #area2_2 {
+	height: 33px; clear: both;
+}
+#header #area2_l2 {
+	background-position: bottom; width: 2px; height: 33px; float: left; background-image: url("../images/menu_l.gif"); background-repeat: no-repeat;
+}
+#header #area2_m2 {
+	background-position: bottom; width: 906px; height: 33px; float: left; background-image: url("../images/menu_m.gif"); background-repeat: repeat-x;
+}
+#header #area2_m22 {
+	width: auto; height: 20px; color: rgb(255, 255, 255); font-size: 12px; margin-top: 8px; margin-right: 10px;
+}
+#header #area2_m22 a:link {
+	color: rgb(255, 255, 255);
+}
+#header #area2_m22 a:visited {
+	color: rgb(255, 255, 255);
+}
+#header #area2_r2 {
+	background-position: bottom; width: 2px; height: 33px; float: left; background-image: url("../images/menu_r.gif"); background-repeat: no-repeat;
+}
+.shu_yell {
+	color: rgb(140, 170, 53);
+}
