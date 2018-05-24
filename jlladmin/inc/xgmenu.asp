@@ -20,6 +20,7 @@
                           <li class="nav1-2"><a class="" href="sitemanager.asp">管理员管理</a></li>
                           <li class="nav1-3"><a class="" href="sitespase.asp">空间使用信息</a></li>
                           <li class="nav1-4"><a class="" href="lyb.asp">网站报名管理</a></li>
+                          <li class="nav1-6"><a class="" href="lyb2.asp">房源提交管理</a></li>
                           <li class="nav1-5"><a class="" href="tdk_list.asp">网站SEO设置</a></li>
                           <!-- <li class="nav1-4"><a class="" href="siteinfo.asp">服务器情况</a></li>-->
                       </ul>
@@ -54,50 +55,8 @@
 <!--<li class="nav3-8"><a class="" href="class_kfs.asp">开发商</a></li>-->
                       </ul>
                   </li>
-  <li class="sub-menu nav4">
-                      <a href="javascript:;" class="">
-                          <i class="icon-tasks"></i>
-                          <span>最新资讯</span>
-                          <span class="arrow"></span>
-                      </a>
-                      <ul class="sub">
-                    <!--  <li class="nav4-5"><a class="" href="class_prod.asp">新闻类别管理</a></li>-->
-<!--                          <li class="nav4-1"><a class="" href="Prod_list.Asp?Prod_Type=11">展会资讯列表</a></li>
-                          <li class="nav4-2"><a class="" href="Prod_add.asp?Prod_Type=11">增添展会资讯</a></li>
-                          <li class="nav4-3"><a class="" href="Prod_list.Asp?Prod_Type=12">行业动态列表</a></li>
-                          <li class="nav4-4"><a class="" href="Prod_add.asp?Prod_Type=12">增添行业动态</a></li>-->
-                          <%set rs=Server.CreateObject("ADODB.Recordset")
-rs.Open "select * from [class_prod] where cid<>8 order by oid desc,cid desc",conn,1,1
-if rs.bof and rs.eof then 
-else 
+  
 
-i=0
-do while not rs.eof
-
-%>
-<li class="nav4-<%=rs("cid")%>"><a class="" href="Prod_list.Asp?Prod_Type=<%=rs("cid")%>"><%=rs("cname")%>列表</a></li>
-                          <li class="nav4-<%=rs("cid")%>a"><a class="" href="Prod_add.asp?Prod_Type=<%=rs("cid")%>">增添<%=rs("cname")%></a></li>
-
-<%
-rs.movenext
-	i=i+1
-    loop
-end if
-rs.close
-	set rs=nothing%>
-                      </ul>
-                  </li>
- <li class="sub-menu nav5">
-                          <a href="javascript:;" class="">
-                              <i class="icon-tasks"></i>
-                              <span>销售团队管理</span>
-                              <span class="arrow"></span>
-                          </a>
-                          <ul class="sub">
-                              <li class="nav5-1"><a class="" href="team_list.Asp?classid=1">销售团队列表</a></li>
-                              <li class="nav5-2"><a class="" href="team_add.asp?classid=1">添加团队成员</a></li>
-                          </ul>
-                      </li>
                   <li class="sub-menu nav6">
                                         <a href="javascript:;" class="">
                                             <i class="icon-tasks"></i>

@@ -120,7 +120,7 @@ textarea.Form__input {
                     <article id="node-212" class="node node-webform clearfix" about="/office-leasing/for-landlord" typeof="sioc:Item foaf:Document">
                         <header>
                                 <span property="dc:title" content="投放房源" class="rdf-meta element-hidden"></span>      </header>
-                        <div class="container container2"><form class="webform-client-form webform-client-form-212" action="/office-leasing/for-landlord" method="post" id="webform-client-form-212" accept-charset="UTF-8"><div class="form-item webform-component webform-component-markup webform-component--header form-group form-item form-type-markup form-group"><div class="row">
+                        <div class="container container2"><form class="webform-client-form webform-client-form-212" action="" method="post" id="webform-client-form-212" accept-charset="UTF-8"><div class="form-item webform-component webform-component-markup webform-component--header form-group form-item form-type-markup form-group"><div class="row">
                     <div class="col-xs-12">
                     <h1 class="eloqua-heading">想要投放房源？</h1>
                     </div>
@@ -141,17 +141,17 @@ textarea.Form__input {
                           <span class="panel-title fieldset-legend">您的联系方式</span>
                         </legend>
                               <div class="panel-body">
-                            <div class="col-sm-2 form-item webform-component webform-component-select webform-component--contact-info-row1--salutation form-group form-item form-item-submitted-contact-info-row1-salutation form-type-select form-group"><select class="form-control form-select" id="edit-submitted-contact-info-row1-salutation" name="submitted[contact_info_row1][salutation]"><option value="Mr." selected="selected">先生</option><option value="Ms.">女士</option></select> <label class="control-label element-invisible" for="edit-submitted-contact-info-row1-salutation">Salutation</label>
-                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--contact-info-row1--first-name form-group form-item form-item-submitted-contact-info-row1-first-name form-type-textfield form-group"><input placeholder="名" class="Form__input form-control form-text" type="text" id="edit-submitted-contact-info-row1-first-name" name="submitted[contact_info_row1][first_name]" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row1-first-name">名</label>
-                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--contact-info-row1--last-name form-group form-item form-item-submitted-contact-info-row1-last-name form-type-textfield form-group"><input required="required" placeholder="姓*" class="Form__input required form-control form-text required" type="text" id="edit-submitted-contact-info-row1-last-name" name="submitted[contact_info_row1][last_name]" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row1-last-name">姓 <span class="form-required" title="This field is required.">*</span></label>
-                    </div><div class="col-sm-4 form-item webform-component webform-component-textfield webform-component--contact-info-row1--company form-group form-item form-item-submitted-contact-info-row1-company form-type-textfield form-group"><input placeholder="公司名称" class="Form__input form-control form-text" type="text" id="edit-submitted-contact-info-row1-company" name="submitted[contact_info_row1][company]" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row1-company">公司</label>
+                            <div class="col-sm-2 form-item webform-component webform-component-select webform-component--contact-info-row1--salutation form-group form-item form-item-submitted-contact-info-row1-salutation form-type-select form-group"><select class="form-control form-select" id="edit-submitted-contact-info-row1-salutation" name="xb"><option value="Mr." selected="selected">先生</option><option value="Ms.">女士</option></select> <label class="control-label element-invisible" for="edit-submitted-contact-info-row1-salutation">Salutation</label>
+                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--contact-info-row1--last-name form-group form-item form-item-submitted-contact-info-row1-last-name form-type-textfield form-group"><input required="required" placeholder="姓*" class="Form__input required form-control form-text required" type="text" id="edit-submitted-contact-info-row1-last-name" name="xmx" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row1-last-name">姓 <span class="form-required" title="This field is required.">*</span></label>
+                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--contact-info-row1--first-name form-group form-item form-item-submitted-contact-info-row1-first-name form-type-textfield form-group"><input placeholder="名" class="Form__input form-control form-text" type="text" id="edit-submitted-contact-info-row1-first-name" name="xmm" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row1-first-name">名</label>
+                    </div><div class="col-sm-4 form-item webform-component webform-component-textfield webform-component--contact-info-row1--company form-group form-item form-item-submitted-contact-info-row1-company form-type-textfield form-group"><input placeholder="公司名称" class="Form__input form-control form-text" type="text" id="edit-submitted-contact-info-row1-company" name="company" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row1-company">公司</label>
                     </div>  </div>
                       </fieldset>
                     <fieldset  class="webform-component-fieldset row webform-component--contact-info-row2 panel panel-default form-wrapper">
                           <div class="panel-body">
-                            <div class="col-sm-4 form-item webform-component webform-component-textfield webform-component--contact-info-row2--mobilePhone form-group form-item form-item-submitted-contact-info-row2-mobilephone form-type-textfield form-group"><input required="required" placeholder="手机*(+86xxxxxxxxxxx)" class="Form__input required form-control form-text required" type="text" id="edit-submitted-contact-info-row2-mobilephone" name="submitted[contact_info_row2][mobilePhone]" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row2-mobilephone">电话 <span class="form-required" title="This field is required.">*</span></label>
-                    </div><div class="col-sm-4 form-item webform-component webform-component-email webform-component--contact-info-row2--email-address form-group form-item form-item-submitted-contact-info-row2-email-address form-type-webform-email form-group"><input required="required" class="email Form__input required form-control form-text form-email required" placeholder="电邮*" type="email" id="edit-submitted-contact-info-row2-email-address" name="submitted[contact_info_row2][email_address]" size="60" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row2-email-address">电邮 <span class="form-required" title="This field is required.">*</span></label>
-                    </div><div class="col-sm-4 form-item webform-component webform-component-select webform-component--contact-info-row2--city form-group form-item form-item-submitted-contact-info-row2-city form-type-select form-group"><select class="form-control form-select" id="edit-submitted-contact-info-row2-city" name="submitted[contact_info_row2][city]"><option value="" selected="selected">选择城市</option><option value="Shanghai">上海</option><option value="Beijing">北京</option><option value="Guangzhou">广州</option><option value="Chengdu">成都</option><option value="Shenzhen">深圳</option><option value="Other">其他</option></select> <label class="control-label element-invisible" for="edit-submitted-contact-info-row2-city">City</label>
+                            <div class="col-sm-4 form-item webform-component webform-component-textfield webform-component--contact-info-row2--mobilePhone form-group form-item form-item-submitted-contact-info-row2-mobilephone form-type-textfield form-group"><input required="required" placeholder="手机*(+86xxxxxxxxxxx)" class="Form__input required form-control form-text required" type="text" id="edit-submitted-contact-info-row2-mobilephone" name="tel" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row2-mobilephone">电话 <span class="form-required" title="This field is required.">*</span></label>
+                    </div><div class="col-sm-4 form-item webform-component webform-component-email webform-component--contact-info-row2--email-address form-group form-item form-item-submitted-contact-info-row2-email-address form-type-webform-email form-group"><input required="required" class="email Form__input required form-control form-text form-email required" placeholder="电邮*" type="email" id="edit-submitted-contact-info-row2-email-address" name="mail" size="60" /> <label class="control-label element-invisible" for="edit-submitted-contact-info-row2-email-address">电邮 <span class="form-required" title="This field is required.">*</span></label>
+                    </div><div class="col-sm-4 form-item webform-component webform-component-select webform-component--contact-info-row2--city form-group form-item form-item-submitted-contact-info-row2-city form-type-select form-group"><select class="form-control form-select" id="edit-submitted-contact-info-row2-city" name="city"><option value="" selected="selected">选择城市</option><option value="Shanghai">上海</option><option value="Beijing">北京</option><option value="Guangzhou">广州</option><option value="Chengdu">成都</option><option value="Shenzhen">深圳</option><option value="Other">其他</option></select> <label class="control-label element-invisible" for="edit-submitted-contact-info-row2-city">City</label>
                     </div>  </div>
                       </fieldset>
                     <fieldset  class="webform-component-fieldset row webform-component--building-info-row panel panel-default form-wrapper">
@@ -159,10 +159,10 @@ textarea.Form__input {
                           <span class="panel-title fieldset-legend">房屋信息</span>
                         </legend>
                               <div class="panel-body">
-                            <div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--building-info-row--buildingname form-group form-item form-item-submitted-building-info-row-buildingname form-type-textfield form-group"><input placeholder="社区名称" class="Form__input form-control form-text" type="text" id="edit-submitted-building-info-row-buildingname" name="submitted[building_info_row][buildingname]" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-building-info-row-buildingname">大厦名称</label>
-                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--building-info-row--unit form-group form-item form-item-submitted-building-info-row-unit form-type-textfield form-group"><input placeholder="单位/楼层" class="Form__input form-control form-text" type="text" id="edit-submitted-building-info-row-unit" name="submitted[building_info_row][unit]" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-building-info-row-unit">Unit</label>
-                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--building-info-row--unitsize form-group form-item form-item-submitted-building-info-row-unitsize form-type-textfield form-group"><input placeholder="面积" class="Form__input form-control form-text" type="text" id="edit-submitted-building-info-row-unitsize" name="submitted[building_info_row][unitsize]" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-building-info-row-unitsize">面积</label>
-                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--building-info-row--rent form-group form-item form-item-submitted-building-info-row-rent form-type-textfield form-group"><input placeholder="预期租金/月" class="Form__input form-control form-text" type="text" id="edit-submitted-building-info-row-rent" name="submitted[building_info_row][rent]" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-building-info-row-rent">Rent</label>
+                            <div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--building-info-row--buildingname form-group form-item form-item-submitted-building-info-row-buildingname form-type-textfield form-group"><input placeholder="社区名称" class="Form__input form-control form-text" type="text" id="edit-submitted-building-info-row-buildingname" name="sq" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-building-info-row-buildingname">大厦名称</label>
+                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--building-info-row--unit form-group form-item form-item-submitted-building-info-row-unit form-type-textfield form-group"><input placeholder="单位/楼层" class="Form__input form-control form-text" type="text" id="edit-submitted-building-info-row-unit" name="dw" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-building-info-row-unit">Unit</label>
+                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--building-info-row--unitsize form-group form-item form-item-submitted-building-info-row-unitsize form-type-textfield form-group"><input placeholder="面积" class="Form__input form-control form-text" type="text" id="edit-submitted-building-info-row-unitsize" name="mj" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-building-info-row-unitsize">面积</label>
+                    </div><div class="col-sm-3 form-item webform-component webform-component-textfield webform-component--building-info-row--rent form-group form-item form-item-submitted-building-info-row-rent form-type-textfield form-group"><input placeholder="预期租金/月" class="Form__input form-control form-text" type="text" id="edit-submitted-building-info-row-rent" name="rent" value="" size="60" maxlength="128" /> <label class="control-label element-invisible" for="edit-submitted-building-info-row-rent">Rent</label>
                     </div>  </div>
                       </fieldset>
                     <fieldset  class="webform-component-fieldset row webform-component--your-message panel panel-default form-wrapper">
@@ -170,7 +170,7 @@ textarea.Form__input {
                           <span class="panel-title fieldset-legend">留言</span>
                         </legend>
                               <div class="panel-body">
-                            <div class="col-sm-12 form-item webform-component webform-component-textarea webform-component--your-message--message form-group form-item form-item-submitted-your-message-message form-type-textarea form-group"><div class="form-textarea-wrapper"><textarea placeholder="请留言" class="Form__input form-control form-textarea" id="edit-submitted-your-message-message" name="submitted[your_message][message]" cols="60" rows="5"></textarea></div> <label class="control-label element-invisible" for="edit-submitted-your-message-message">Your Message</label>
+                            <div class="col-sm-12 form-item webform-component webform-component-textarea webform-component--your-message--message form-group form-item form-item-submitted-your-message-message form-type-textarea form-group"><div class="form-textarea-wrapper"><textarea placeholder="请留言" class="Form__input form-control form-textarea" id="edit-submitted-your-message-message" name="msg" cols="60" rows="5"></textarea></div> <label class="control-label element-invisible" for="edit-submitted-your-message-message">Your Message</label>
                     </div>  </div>
                       </fieldset>
                     <fieldset  class="webform-component-fieldset row webform-component--selections panel panel-default form-wrapper">
@@ -215,7 +215,45 @@ textarea.Form__input {
                     </div>
                     
 
-    
+       <%
+    xb=request("xb")
+    xmx=request("xmx")
+    xmm=request("xmm")
+    company=request("company")
+    tel=request("tel")
+    mail=request("mail")
+    city=request("city")
+    sq=request("sq")
+    dw=request("dw")
+    mj=request("mj")
+    rant=request("rant")
+    msg=request("msg")
+    if xmx<>"" then
+set oRs=Server.CreateObject("ADODB.Recordset")
+oRs.Open "select * from [msg] ",conn,1,3
+
+oRs.Addnew
+
+oRs("xb")=trim(xb)
+oRs("xmx")=trim(xmx) 
+oRs("xmm")=Trim(xmm)
+oRs("company")=Trim(company)
+oRs("tel")=Trim(tel)
+oRs("mail")=Trim(mail)
+oRs("city")=Trim(city)
+oRs("sq")=Trim(sq)
+oRs("dw")=Trim(dw)
+oRs("mj")=Trim(mj)
+oRs("rant")=Trim(rant)
+oRs("msg")=Trim(msg)
+
+oRs.Update
+
+oRs.close
+set oRs=Nothing
+
+end if
+    %>
                     
                                   
 
