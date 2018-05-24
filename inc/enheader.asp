@@ -40,7 +40,7 @@
                  <li class="XGli"><a href="enindex.asp" class="s_link2">Leasing</a></li>
                  <li class="XGli"><a href="http://www.jllresidential.cn/guonei/entrust.asp" class="s_link2">Resale</a></li>
                 <li class=" XGli"><a href="http://www.jllresidential.cn/guonei/news.asp" class="s_link2" rel="nofollow">News</a>  </li>
-                <li class=" XGli"><a href="for-landlord.asp" class="s_link2"  rel="nofollow">Push</a> </li>
+                <li class=" XGli"><a href="for-landlord.asp" class="s_link2"  rel="nofollow">Property on sale</a> </li>
                 <li class=" XGli"><a href="index.asp" class="s_link2"  rel="nofollow">中文</a> </li>
                
               <!--  <li class=" XGli"><a href="http://www.jllresidential.cn/intl" target="_blank" class="s_link2" >国际住宅</a> </li>-->
