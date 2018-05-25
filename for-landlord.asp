@@ -2,6 +2,7 @@
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
+<!--#include file="contactmail.Asp"-->
 <%
 dim tdkid
 tdkid=2
@@ -251,7 +252,7 @@ oRs.Update
 
 oRs.close
 set oRs=Nothing
-
+Call SendAction (strSubject,"jll@hitpointcloud.com",strSender,strContent)
 end if
     %>
                     

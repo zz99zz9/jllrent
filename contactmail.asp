@@ -1,4 +1,4 @@
-<%if request("action")="send" then%>
+
 <%
 
 '参数说明
@@ -37,31 +37,20 @@ strArr=split(GetUrl,"/")
 
 '调用此Sub的例子
 Dim strSubject,strEmail,strMailAdress,strSender,strContent,strFromer
-strSubject = "PARK SHORE 报名-"&Request("uname")
+strSubject = "来自住宅官网的信息-By "&Request("uname")
 strContent = "Name:" & Request("uname") & VbCrLf & "Tel:" & Request("uphone") & VbCrLf & "City:" & Request("ucity") & VbCrLf & "From:" & GetUrl'strArr(3)
 strSender = Request("Name")
-strEmail = "slevin.wang@ap.jll.com" '这是收信的地址,可以改为其它的邮箱
-strMailAddress = "smtp.qq.com" '我司企业邮局地址，请使用 mail.您的域名
-strMailUser = "4659489@qq.com" '我司企业邮局用户名
-strMailPass = "rg5549287" '邮局用户密码
+strEmail = "4659489@qq.com" '这是收信的地址,可以改为其它的邮箱 Project.Sales@ap.jll.com
+strMailAddress = "smtp.exmail.qq.com" '我司企业邮局地址，请使用 mail.您的域名
+strMailUser = "jll@hitpointcloud.com" '我司企业邮局用户名
+strMailPass = "Hit12345" '邮局用户密码
 
 
 %>
 
 <%
 
-if request.cookies("uphone")=Request("uphone") then
-response.Redirect("index.html?3")
-	elseif len(Request("uphone"))<>11 then
-response.Redirect("index.html?2")
-	else
-	'Call SendAction (strSubject,strEmail,strSender,strContent)
-		Call SendAction (strSubject,"4659489@qq.com",strSender,strContent)
-		response.cookies("uphone")=Request("uphone")
-		response.Redirect("index.html?1")
+'Call SendAction (strSubject,"jll@hitpointcloud.com",strSender,strContent)
 	%>
 
 
-<%end if
-end if
-%>
