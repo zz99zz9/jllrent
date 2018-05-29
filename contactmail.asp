@@ -28,7 +28,7 @@ Dim strSubject,strEmail,strMailAdress,strSender,strContent,strFromer
 strSubject = "官网留言-by"&Request("xmx")&Request("xmm")
 strContent = "姓名:" & Request("xmx") &Request("xmm") & VbCrLf & "公司:" & Request("company") & VbCrLf &  "社区:" & Request("sq") &  VbCrLf &  "门牌:" & Request("dw") &  VbCrLf &  "面积:" & Request("mj") & VbCrLf &  "月租金:" & Request("rent") & VbCrLf & "电话:" & Request("tel") & VbCrLf & "邮箱:" & Request("mail") & VbCrLf & "留言:" & vbcrlf & Request("msg")
 strSender = Request("Name")
-strEmail = "4659489@qq.com" '这是收信的地址,可以改为其它的邮箱
+strEmail = "Project.Sales@ap.jll.com" '这是收信的地址,可以改为其它的邮箱
 strMailAddress = "smtp.qq.com" '我司企业邮局地址，请使用 mail.您的域名
 strMailUser = "4659489@qq.com" '我司企业邮局用户名
 strMailPass = "rg5549287" '邮局用户密码
