@@ -1,56 +1,38 @@
 
 <%
 
-'²ÎÊýËµÃ÷
-'Subject : ÓÊ¼þ±êÌâ
-'MailAddress : ·¢¼þ·þÎñÆ÷µÄµØÖ·,Èçsmtp.163.com
-'Email : ÊÕ¼þÈËÓÊ¼þµØÖ·
-'Sender : ·¢¼þÈËÐÕÃû
-'Content : ÓÊ¼þÄÚÈÝ
-'Fromer : ·¢¼þÈËµÄÓÊ¼þµØÖ·
+'å‚æ•°è¯´æ˜Ž
+'Subject : é‚®ä»¶æ ‡é¢˜
+'MailAddress : å‘ä»¶æœåŠ¡å™¨çš„åœ°å€,å¦‚smtp.163.com
+'Email : æ”¶ä»¶äººé‚®ä»¶åœ°å€
+'Sender : å‘ä»¶äººå§“å
+'Content : é‚®ä»¶å†…å®¹
+'Fromer : å‘ä»¶äººçš„é‚®ä»¶åœ°å€
 
 Sub SendAction(subject, email, sender, content) 
 Set JMail = Server.CreateObject("JMail.Message") 
-JMail.Charset = "gb2312" ' ÓÊ¼þ×Ö·û¼¯£¬Ä¬ÈÏÎª"US-ASCII"
-JMail.From = strMailUser ' ·¢ËÍÕßµØÖ·
-JMail.FromName = sender' ·¢ËÍÕßÐÕÃû
+JMail.Charset = "utf-8" ' é‚®ä»¶å­—ç¬¦é›†ï¼Œé»˜è®¤ä¸º"US-ASCII"
+JMail.From = strMailUser ' å‘é€è€…åœ°å€
+JMail.FromName = sender' å‘é€è€…å§“å
 JMail.Subject =subject
-JMail.MailServerUserName = strMailUser' Éí·ÝÑéÖ¤µÄÓÃ»§Ãû
-JMail.MailServerPassword = strMailPass ' Éí·ÝÑéÖ¤µÄÃÜÂë
+JMail.MailServerUserName = strMailUser' èº«ä»½éªŒè¯çš„ç”¨æˆ·å
+JMail.MailServerPassword = strMailPass ' èº«ä»½éªŒè¯çš„å¯†ç 
 JMail.Priority = 3
 JMail.AddRecipient(email)
 JMail.Body = content
 JMail.Send(strMailAddress)
 End Sub
-  
-  GetUrl="http://"&Request.ServerVariables("SERVER_NAME")&Request.ServerVariables("URL")   
-'  If   Request.ServerVariables("QUERY_STRING")<>""   Then   GetURL=GetUrl&"?"&   Request.ServerVariables("QUERY_STRING")
- 
-  GetUrl=replace(GetUrl,"contact.asp","")
-  GetUrl=replace(GetUrl,"http://www.jllresidential.cn","")
-strArr=split(GetUrl,"/")  
 
-'ÑéÖ¤ÐÅÏ¢ÊÇ·ñÖØ¸´
-  
-
-
-
-'µ÷ÓÃ´ËSubµÄÀý×Ó
+'è°ƒç”¨æ­¤Subçš„ä¾‹å­
 Dim strSubject,strEmail,strMailAdress,strSender,strContent,strFromer
-strSubject = "À´×Ô×¡Õ¬¹ÙÍøµÄÐÅÏ¢-By "&Request("uname")
-strContent = "Name:" & Request("uname") & VbCrLf & "Tel:" & Request("uphone") & VbCrLf & "City:" & Request("ucity") & VbCrLf & "From:" & GetUrl'strArr(3)
+strSubject = "å®˜ç½‘ç•™è¨€-by"&Request("xmx")&Request("xmm")
+strContent = "å§“å:" & Request("xmx") &Request("xmm") & VbCrLf & "å…¬å¸:" & Request("company") & VbCrLf &  "ç¤¾åŒº:" & Request("sq") &  VbCrLf &  "é—¨ç‰Œ:" & Request("dw") &  VbCrLf &  "é¢ç§¯:" & Request("mj") & VbCrLf &  "æœˆç§Ÿé‡‘:" & Request("rent") & VbCrLf & "ç”µè¯:" & Request("tel") & VbCrLf & "é‚®ç®±:" & Request("mail") & VbCrLf & "ç•™è¨€:" & vbcrlf & Request("msg")
 strSender = Request("Name")
-strEmail = "4659489@qq.com" 'ÕâÊÇÊÕÐÅµÄµØÖ·,¿ÉÒÔ¸ÄÎªÆäËüµÄÓÊÏä Project.Sales@ap.jll.com
-strMailAddress = "smtp.exmail.qq.com" 'ÎÒË¾ÆóÒµÓÊ¾ÖµØÖ·£¬ÇëÊ¹ÓÃ mail.ÄúµÄÓòÃû
-strMailUser = "jll@hitpointcloud.com" 'ÎÒË¾ÆóÒµÓÊ¾ÖÓÃ»§Ãû
-strMailPass = "Hit12345" 'ÓÊ¾ÖÓÃ»§ÃÜÂë
+strEmail = "4659489@qq.com" 'è¿™æ˜¯æ”¶ä¿¡çš„åœ°å€,å¯ä»¥æ”¹ä¸ºå…¶å®ƒçš„é‚®ç®±
+strMailAddress = "smtp.qq.com" 'æˆ‘å¸ä¼ä¸šé‚®å±€åœ°å€ï¼Œè¯·ä½¿ç”¨ mail.æ‚¨çš„åŸŸå
+strMailUser = "4659489@qq.com" 'æˆ‘å¸ä¼ä¸šé‚®å±€ç”¨æˆ·å
+strMailPass = "rg5549287" 'é‚®å±€ç”¨æˆ·å¯†ç 
 
+'Call SendAction (strSubject,strEmail,strSender,strContent)
 
 %>
-
-<%
-
-'Call SendAction (strSubject,"jll@hitpointcloud.com",strSender,strContent)
-	%>
-
-

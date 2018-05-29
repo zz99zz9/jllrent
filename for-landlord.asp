@@ -182,7 +182,7 @@ textarea.Form__input {
                     </div></div> <label class="control-label element-invisible" for="edit-submitted-selections-terms-and-privacy">Terms And Privacy <span class="form-required" title="This field is required.">*</span></label>
                     </div>  </div>
                       </fieldset>
-                    <div class="form-item webform-component webform-component-hidden webform-component--elqcampaignid form-item form-item-submitted-elqcampaignid form-type-hidden" style="display: none"><input type="hidden" name="submitted[elqcampaignid]" value="" />
+                    <div class="form-item webform-component webform-component-hidden webform-component--elqcampaignid form-item form-item-submitted-elqcampaignid form-type-hidden" style="display: none"><input type="hidden" name="submitted[elqcampaignid]" value="" /><input type="hidden" name="sss" value="yes" />
                     </div><div class="form-item webform-component webform-component-hidden webform-component--floorsize form-item form-item-submitted-floorsize form-type-hidden" style="display: none"><input type="hidden" name="submitted[floorsize]" value="" />
                     </div><div class="form-item webform-component webform-component-hidden webform-component--sourcelistingid form-item form-item-submitted-sourcelistingid form-type-hidden" style="display: none"><input type="hidden" name="submitted[sourcelistingid]" value="" />
                     </div><div class="form-item webform-component webform-component-hidden webform-component--originatingsite form-item form-item-submitted-originatingsite form-type-hidden" style="display: none"><input type="hidden" name="submitted[originatingsite]" value="dichandadang.com	" />
@@ -229,7 +229,8 @@ textarea.Form__input {
     mj=request("mj")
     rant=request("rant")
     msg=request("msg")
-    if xmx<>"" then
+    sss=request("sss")
+    if sss="yes" then
 set oRs=Server.CreateObject("ADODB.Recordset")
 oRs.Open "select * from [msg] ",conn,1,3
 
@@ -252,7 +253,7 @@ oRs.Update
 
 oRs.close
 set oRs=Nothing
-Call SendAction (strSubject,"jll@hitpointcloud.com",strSender,strContent)
+Call SendAction (strSubject,strEmail,strSender,strContent)
 end if
     %>
                     
